@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Nov 25 19:26:01 2016
+# Process ID: 5264
+# Log file: D:/xlinix/MIPS16/planAhead_run_5/planAhead.log
+# Journal file: D:/xlinix/MIPS16/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/xlinix/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/xlinix/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/xlinix/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/xlinix/MIPS16/pa.fromNetlist.tcl
+# create_project -name MIPS16 -dir "D:/xlinix/MIPS16/planAhead_run_5" -part xc3s1200efg320-4
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     D:/xlinix/MIPS16/planAhead_run_5/MIPS16.ppr
+     D:/xlinix/MIPS16/planAhead_run_5/MIPS16.data
+
+    while executing
+"create_project -name MIPS16 -dir "D:/xlinix/MIPS16/planAhead_run_5" -part xc3s1200efg320-4"
+    (file "D:/xlinix/MIPS16/pa.fromNetlist.tcl" line 4)
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Fri Nov 25 19:26:37 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

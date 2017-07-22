@@ -1,0 +1,1110 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\xlinix\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml MIPS.twx MIPS.ncd -o MIPS.twr MIPS.pcf -ucf MIPS.ucf
+
+Design file:              MIPS.ncd
+Physical constraint file: MIPS.pcf
+Device,package,speed:     xc3s1200e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_50m
+--------------+------------+------------+------------------+--------+
+              |Max Setup to|Max Hold to |                  | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------------+--------+
+data_ready    |   -3.295(R)|    6.336(R)|clk               |   0.000|
+flash_data<0> |   -3.426(R)|    6.412(R)|clk               |   0.000|
+flash_data<1> |   -3.511(R)|    6.480(R)|clk               |   0.000|
+flash_data<2> |   -3.426(R)|    6.413(R)|clk               |   0.000|
+flash_data<3> |   -3.491(R)|    6.466(R)|clk               |   0.000|
+flash_data<4> |   -3.412(R)|    6.406(R)|clk               |   0.000|
+flash_data<5> |   -3.098(R)|    6.154(R)|clk               |   0.000|
+flash_data<6> |   -2.899(R)|    5.992(R)|clk               |   0.000|
+flash_data<7> |   -3.152(R)|    6.193(R)|clk               |   0.000|
+flash_data<8> |   -2.623(R)|    5.775(R)|clk               |   0.000|
+flash_data<9> |   -3.872(R)|    6.775(R)|clk               |   0.000|
+flash_data<10>|   -2.595(R)|    5.749(R)|clk               |   0.000|
+flash_data<11>|   -2.918(R)|    6.007(R)|clk               |   0.000|
+flash_data<12>|   -2.788(R)|    5.907(R)|clk               |   0.000|
+flash_data<13>|   -2.991(R)|    6.069(R)|clk               |   0.000|
+flash_data<14>|   -2.866(R)|    5.966(R)|clk               |   0.000|
+flash_data<15>|   -2.886(R)|    5.982(R)|clk               |   0.000|
+ram1_data<0>  |   -4.194(R)|    7.044(R)|clk               |   0.000|
+ram1_data<1>  |   -4.561(R)|    7.349(R)|clk               |   0.000|
+ram1_data<2>  |   -3.212(R)|    6.259(R)|clk               |   0.000|
+ram1_data<3>  |   -5.416(R)|    8.034(R)|clk               |   0.000|
+ram1_data<4>  |   -4.781(R)|    7.515(R)|clk               |   0.000|
+ram1_data<5>  |   -4.958(R)|    7.657(R)|clk               |   0.000|
+ram1_data<6>  |   -5.043(R)|    7.736(R)|clk               |   0.000|
+ram1_data<7>  |   -4.642(R)|    7.415(R)|clk               |   0.000|
+ram1_data<8>  |   -5.327(R)|    7.964(R)|clk               |   0.000|
+ram1_data<9>  |   -5.411(R)|    8.031(R)|clk               |   0.000|
+ram1_data<10> |   -4.823(R)|    7.559(R)|clk               |   0.000|
+ram1_data<11> |   -4.774(R)|    7.520(R)|clk               |   0.000|
+ram1_data<12> |   -5.186(R)|    7.848(R)|clk               |   0.000|
+ram1_data<13> |   -5.160(R)|    7.827(R)|clk               |   0.000|
+ram1_data<14> |   -4.743(R)|    7.494(R)|clk               |   0.000|
+ram1_data<15> |   -4.775(R)|    7.519(R)|clk               |   0.000|
+ram2_data<0>  |   -3.191(R)|    6.734(R)|clk               |   0.000|
+ram2_data<1>  |   -3.068(R)|    6.635(R)|clk               |   0.000|
+ram2_data<2>  |   -3.175(R)|    6.964(R)|clk               |   0.000|
+ram2_data<3>  |   -3.013(R)|    6.846(R)|clk               |   0.000|
+ram2_data<4>  |   -3.245(R)|    6.699(R)|clk               |   0.000|
+ram2_data<5>  |   -3.532(R)|    6.553(R)|clk               |   0.000|
+ram2_data<6>  |   -2.462(R)|    6.759(R)|clk               |   0.000|
+ram2_data<7>  |   -2.492(R)|    6.554(R)|clk               |   0.000|
+ram2_data<8>  |   -2.831(R)|    6.878(R)|clk               |   0.000|
+ram2_data<9>  |   -3.502(R)|    6.700(R)|clk               |   0.000|
+ram2_data<10> |   -2.958(R)|    6.547(R)|clk               |   0.000|
+ram2_data<11> |   -3.020(R)|    6.808(R)|clk               |   0.000|
+ram2_data<12> |   -2.617(R)|    6.213(R)|clk               |   0.000|
+ram2_data<13> |   -3.507(R)|    6.488(R)|clk               |   0.000|
+ram2_data<14> |   -3.220(R)|    6.726(R)|clk               |   0.000|
+ram2_data<15> |   -2.872(R)|    6.268(R)|clk               |   0.000|
+rst           |   24.421(R)|    5.955(R)|clk               |   0.000|
+tbre          |   -2.266(R)|    5.502(R)|clk               |   0.000|
+tsre          |   -1.028(R)|    5.479(R)|clk               |   0.000|
+--------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk_h
+--------------+------------+------------+------------------+--------+
+              |Max Setup to|Max Hold to |                  | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------------+--------+
+data_ready    |   -3.276(R)|    6.313(R)|clk               |   0.000|
+flash_data<0> |   -3.407(R)|    6.389(R)|clk               |   0.000|
+flash_data<1> |   -3.492(R)|    6.457(R)|clk               |   0.000|
+flash_data<2> |   -3.407(R)|    6.390(R)|clk               |   0.000|
+flash_data<3> |   -3.472(R)|    6.443(R)|clk               |   0.000|
+flash_data<4> |   -3.393(R)|    6.383(R)|clk               |   0.000|
+flash_data<5> |   -3.079(R)|    6.131(R)|clk               |   0.000|
+flash_data<6> |   -2.880(R)|    5.969(R)|clk               |   0.000|
+flash_data<7> |   -3.133(R)|    6.170(R)|clk               |   0.000|
+flash_data<8> |   -2.604(R)|    5.752(R)|clk               |   0.000|
+flash_data<9> |   -3.853(R)|    6.752(R)|clk               |   0.000|
+flash_data<10>|   -2.576(R)|    5.726(R)|clk               |   0.000|
+flash_data<11>|   -2.899(R)|    5.984(R)|clk               |   0.000|
+flash_data<12>|   -2.769(R)|    5.884(R)|clk               |   0.000|
+flash_data<13>|   -2.972(R)|    6.046(R)|clk               |   0.000|
+flash_data<14>|   -2.847(R)|    5.943(R)|clk               |   0.000|
+flash_data<15>|   -2.867(R)|    5.959(R)|clk               |   0.000|
+ram1_data<0>  |   -4.175(R)|    7.021(R)|clk               |   0.000|
+ram1_data<1>  |   -4.542(R)|    7.326(R)|clk               |   0.000|
+ram1_data<2>  |   -3.193(R)|    6.236(R)|clk               |   0.000|
+ram1_data<3>  |   -5.397(R)|    8.011(R)|clk               |   0.000|
+ram1_data<4>  |   -4.762(R)|    7.492(R)|clk               |   0.000|
+ram1_data<5>  |   -4.939(R)|    7.634(R)|clk               |   0.000|
+ram1_data<6>  |   -5.024(R)|    7.713(R)|clk               |   0.000|
+ram1_data<7>  |   -4.623(R)|    7.392(R)|clk               |   0.000|
+ram1_data<8>  |   -5.308(R)|    7.941(R)|clk               |   0.000|
+ram1_data<9>  |   -5.392(R)|    8.008(R)|clk               |   0.000|
+ram1_data<10> |   -4.804(R)|    7.536(R)|clk               |   0.000|
+ram1_data<11> |   -4.755(R)|    7.497(R)|clk               |   0.000|
+ram1_data<12> |   -5.167(R)|    7.825(R)|clk               |   0.000|
+ram1_data<13> |   -5.141(R)|    7.804(R)|clk               |   0.000|
+ram1_data<14> |   -4.724(R)|    7.471(R)|clk               |   0.000|
+ram1_data<15> |   -4.756(R)|    7.496(R)|clk               |   0.000|
+ram2_data<0>  |   -3.172(R)|    6.711(R)|clk               |   0.000|
+ram2_data<1>  |   -3.049(R)|    6.612(R)|clk               |   0.000|
+ram2_data<2>  |   -3.156(R)|    6.941(R)|clk               |   0.000|
+ram2_data<3>  |   -2.994(R)|    6.823(R)|clk               |   0.000|
+ram2_data<4>  |   -3.226(R)|    6.676(R)|clk               |   0.000|
+ram2_data<5>  |   -3.513(R)|    6.530(R)|clk               |   0.000|
+ram2_data<6>  |   -2.443(R)|    6.736(R)|clk               |   0.000|
+ram2_data<7>  |   -2.473(R)|    6.531(R)|clk               |   0.000|
+ram2_data<8>  |   -2.812(R)|    6.855(R)|clk               |   0.000|
+ram2_data<9>  |   -3.483(R)|    6.677(R)|clk               |   0.000|
+ram2_data<10> |   -2.939(R)|    6.524(R)|clk               |   0.000|
+ram2_data<11> |   -3.001(R)|    6.785(R)|clk               |   0.000|
+ram2_data<12> |   -2.598(R)|    6.190(R)|clk               |   0.000|
+ram2_data<13> |   -3.488(R)|    6.465(R)|clk               |   0.000|
+ram2_data<14> |   -3.201(R)|    6.703(R)|clk               |   0.000|
+ram2_data<15> |   -2.853(R)|    6.245(R)|clk               |   0.000|
+rst           |   24.440(R)|    5.932(R)|clk               |   0.000|
+tbre          |   -2.247(R)|    5.479(R)|clk               |   0.000|
+tsre          |   -1.009(R)|    5.456(R)|clk               |   0.000|
+--------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sw<8>
+--------------+------------+------------+------------------+--------+
+              |Max Setup to|Max Hold to |                  | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------------+--------+
+data_ready    |   -3.449(R)|    6.529(R)|clk               |   0.000|
+flash_data<0> |   -3.580(R)|    6.605(R)|clk               |   0.000|
+flash_data<1> |   -3.665(R)|    6.673(R)|clk               |   0.000|
+flash_data<2> |   -3.580(R)|    6.606(R)|clk               |   0.000|
+flash_data<3> |   -3.645(R)|    6.659(R)|clk               |   0.000|
+flash_data<4> |   -3.566(R)|    6.599(R)|clk               |   0.000|
+flash_data<5> |   -3.252(R)|    6.347(R)|clk               |   0.000|
+flash_data<6> |   -3.053(R)|    6.185(R)|clk               |   0.000|
+flash_data<7> |   -3.306(R)|    6.386(R)|clk               |   0.000|
+flash_data<8> |   -2.777(R)|    5.968(R)|clk               |   0.000|
+flash_data<9> |   -4.026(R)|    6.968(R)|clk               |   0.000|
+flash_data<10>|   -2.749(R)|    5.942(R)|clk               |   0.000|
+flash_data<11>|   -3.072(R)|    6.200(R)|clk               |   0.000|
+flash_data<12>|   -2.942(R)|    6.100(R)|clk               |   0.000|
+flash_data<13>|   -3.145(R)|    6.262(R)|clk               |   0.000|
+flash_data<14>|   -3.020(R)|    6.159(R)|clk               |   0.000|
+flash_data<15>|   -3.040(R)|    6.175(R)|clk               |   0.000|
+ram1_data<0>  |   -4.348(R)|    7.237(R)|clk               |   0.000|
+ram1_data<1>  |   -4.715(R)|    7.542(R)|clk               |   0.000|
+ram1_data<2>  |   -3.366(R)|    6.452(R)|clk               |   0.000|
+ram1_data<3>  |   -5.570(R)|    8.227(R)|clk               |   0.000|
+ram1_data<4>  |   -4.935(R)|    7.708(R)|clk               |   0.000|
+ram1_data<5>  |   -5.112(R)|    7.850(R)|clk               |   0.000|
+ram1_data<6>  |   -5.197(R)|    7.929(R)|clk               |   0.000|
+ram1_data<7>  |   -4.796(R)|    7.608(R)|clk               |   0.000|
+ram1_data<8>  |   -5.481(R)|    8.157(R)|clk               |   0.000|
+ram1_data<9>  |   -5.565(R)|    8.224(R)|clk               |   0.000|
+ram1_data<10> |   -4.977(R)|    7.752(R)|clk               |   0.000|
+ram1_data<11> |   -4.928(R)|    7.713(R)|clk               |   0.000|
+ram1_data<12> |   -5.340(R)|    8.041(R)|clk               |   0.000|
+ram1_data<13> |   -5.314(R)|    8.020(R)|clk               |   0.000|
+ram1_data<14> |   -4.897(R)|    7.687(R)|clk               |   0.000|
+ram1_data<15> |   -4.929(R)|    7.712(R)|clk               |   0.000|
+ram2_data<0>  |   -3.345(R)|    6.927(R)|clk               |   0.000|
+ram2_data<1>  |   -3.222(R)|    6.828(R)|clk               |   0.000|
+ram2_data<2>  |   -3.329(R)|    7.157(R)|clk               |   0.000|
+ram2_data<3>  |   -3.167(R)|    7.039(R)|clk               |   0.000|
+ram2_data<4>  |   -3.399(R)|    6.892(R)|clk               |   0.000|
+ram2_data<5>  |   -3.686(R)|    6.746(R)|clk               |   0.000|
+ram2_data<6>  |   -2.616(R)|    6.952(R)|clk               |   0.000|
+ram2_data<7>  |   -2.646(R)|    6.747(R)|clk               |   0.000|
+ram2_data<8>  |   -2.985(R)|    7.071(R)|clk               |   0.000|
+ram2_data<9>  |   -3.656(R)|    6.893(R)|clk               |   0.000|
+ram2_data<10> |   -3.112(R)|    6.740(R)|clk               |   0.000|
+ram2_data<11> |   -3.174(R)|    7.001(R)|clk               |   0.000|
+ram2_data<12> |   -2.771(R)|    6.406(R)|clk               |   0.000|
+ram2_data<13> |   -3.661(R)|    6.681(R)|clk               |   0.000|
+ram2_data<14> |   -3.374(R)|    6.919(R)|clk               |   0.000|
+ram2_data<15> |   -3.026(R)|    6.461(R)|clk               |   0.000|
+rst           |   24.267(R)|    6.148(R)|clk               |   0.000|
+tbre          |   -2.420(R)|    5.695(R)|clk               |   0.000|
+tsre          |   -1.182(R)|    5.672(R)|clk               |   0.000|
+--------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sw<9>
+--------------+------------+------------+------------------+--------+
+              |Max Setup to|Max Hold to |                  | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------------+--------+
+data_ready    |   -3.140(R)|    6.143(R)|clk               |   0.000|
+flash_data<0> |   -3.271(R)|    6.219(R)|clk               |   0.000|
+flash_data<1> |   -3.356(R)|    6.287(R)|clk               |   0.000|
+flash_data<2> |   -3.271(R)|    6.220(R)|clk               |   0.000|
+flash_data<3> |   -3.336(R)|    6.273(R)|clk               |   0.000|
+flash_data<4> |   -3.257(R)|    6.213(R)|clk               |   0.000|
+flash_data<5> |   -2.943(R)|    5.961(R)|clk               |   0.000|
+flash_data<6> |   -2.744(R)|    5.799(R)|clk               |   0.000|
+flash_data<7> |   -2.997(R)|    6.000(R)|clk               |   0.000|
+flash_data<8> |   -2.468(R)|    5.582(R)|clk               |   0.000|
+flash_data<9> |   -3.717(R)|    6.582(R)|clk               |   0.000|
+flash_data<10>|   -2.440(R)|    5.556(R)|clk               |   0.000|
+flash_data<11>|   -2.763(R)|    5.814(R)|clk               |   0.000|
+flash_data<12>|   -2.633(R)|    5.714(R)|clk               |   0.000|
+flash_data<13>|   -2.836(R)|    5.876(R)|clk               |   0.000|
+flash_data<14>|   -2.711(R)|    5.773(R)|clk               |   0.000|
+flash_data<15>|   -2.731(R)|    5.789(R)|clk               |   0.000|
+ram1_data<0>  |   -4.039(R)|    6.851(R)|clk               |   0.000|
+ram1_data<1>  |   -4.406(R)|    7.156(R)|clk               |   0.000|
+ram1_data<2>  |   -3.057(R)|    6.066(R)|clk               |   0.000|
+ram1_data<3>  |   -5.261(R)|    7.841(R)|clk               |   0.000|
+ram1_data<4>  |   -4.626(R)|    7.322(R)|clk               |   0.000|
+ram1_data<5>  |   -4.803(R)|    7.464(R)|clk               |   0.000|
+ram1_data<6>  |   -4.888(R)|    7.543(R)|clk               |   0.000|
+ram1_data<7>  |   -4.487(R)|    7.222(R)|clk               |   0.000|
+ram1_data<8>  |   -5.172(R)|    7.771(R)|clk               |   0.000|
+ram1_data<9>  |   -5.256(R)|    7.838(R)|clk               |   0.000|
+ram1_data<10> |   -4.668(R)|    7.366(R)|clk               |   0.000|
+ram1_data<11> |   -4.619(R)|    7.327(R)|clk               |   0.000|
+ram1_data<12> |   -5.031(R)|    7.655(R)|clk               |   0.000|
+ram1_data<13> |   -5.005(R)|    7.634(R)|clk               |   0.000|
+ram1_data<14> |   -4.588(R)|    7.301(R)|clk               |   0.000|
+ram1_data<15> |   -4.620(R)|    7.326(R)|clk               |   0.000|
+ram2_data<0>  |   -3.036(R)|    6.541(R)|clk               |   0.000|
+ram2_data<1>  |   -2.913(R)|    6.442(R)|clk               |   0.000|
+ram2_data<2>  |   -3.020(R)|    6.771(R)|clk               |   0.000|
+ram2_data<3>  |   -2.858(R)|    6.653(R)|clk               |   0.000|
+ram2_data<4>  |   -3.090(R)|    6.506(R)|clk               |   0.000|
+ram2_data<5>  |   -3.377(R)|    6.360(R)|clk               |   0.000|
+ram2_data<6>  |   -2.307(R)|    6.566(R)|clk               |   0.000|
+ram2_data<7>  |   -2.337(R)|    6.361(R)|clk               |   0.000|
+ram2_data<8>  |   -2.676(R)|    6.685(R)|clk               |   0.000|
+ram2_data<9>  |   -3.347(R)|    6.507(R)|clk               |   0.000|
+ram2_data<10> |   -2.803(R)|    6.354(R)|clk               |   0.000|
+ram2_data<11> |   -2.865(R)|    6.615(R)|clk               |   0.000|
+ram2_data<12> |   -2.462(R)|    6.020(R)|clk               |   0.000|
+ram2_data<13> |   -3.352(R)|    6.295(R)|clk               |   0.000|
+ram2_data<14> |   -3.065(R)|    6.533(R)|clk               |   0.000|
+ram2_data<15> |   -2.717(R)|    6.075(R)|clk               |   0.000|
+rst           |   24.576(R)|    5.762(R)|clk               |   0.000|
+tbre          |   -2.111(R)|    5.309(R)|clk               |   0.000|
+tsre          |   -0.873(R)|    5.286(R)|clk               |   0.000|
+--------------+------------+------------+------------------+--------+
+
+Clock clk_50m to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+digit1<0>     |   15.218(R)|clk               |   0.000|
+digit1<1>     |   15.163(R)|clk               |   0.000|
+digit1<2>     |   15.522(R)|clk               |   0.000|
+digit1<3>     |   15.417(R)|clk               |   0.000|
+digit1<4>     |   15.274(R)|clk               |   0.000|
+digit1<5>     |   14.906(R)|clk               |   0.000|
+digit1<6>     |   15.547(R)|clk               |   0.000|
+digit2<0>     |   15.006(R)|clk               |   0.000|
+digit2<1>     |   16.133(R)|clk               |   0.000|
+digit2<2>     |   15.121(R)|clk               |   0.000|
+digit2<3>     |   14.702(R)|clk               |   0.000|
+digit2<4>     |   14.680(R)|clk               |   0.000|
+digit2<5>     |   15.199(R)|clk               |   0.000|
+digit2<6>     |   15.045(R)|clk               |   0.000|
+flash_OE      |   16.156(R)|clk               |   0.000|
+flash_addr<1> |   15.542(R)|clk               |   0.000|
+flash_addr<2> |   15.701(R)|clk               |   0.000|
+flash_addr<3> |   15.532(R)|clk               |   0.000|
+flash_addr<4> |   15.582(R)|clk               |   0.000|
+flash_addr<5> |   15.169(R)|clk               |   0.000|
+flash_addr<6> |   14.998(R)|clk               |   0.000|
+flash_addr<7> |   15.310(R)|clk               |   0.000|
+flash_addr<8> |   14.782(R)|clk               |   0.000|
+flash_addr<9> |   15.053(R)|clk               |   0.000|
+flash_addr<10>|   14.778(R)|clk               |   0.000|
+flash_addr<11>|   15.046(R)|clk               |   0.000|
+flash_addr<12>|   15.003(R)|clk               |   0.000|
+flash_addr<13>|   15.303(R)|clk               |   0.000|
+flash_addr<14>|   14.742(R)|clk               |   0.000|
+flash_addr<15>|   15.088(R)|clk               |   0.000|
+flash_addr<16>|   14.905(R)|clk               |   0.000|
+led<0>        |   38.464(R)|clk               |   0.000|
+led<1>        |   38.251(R)|clk               |   0.000|
+led<2>        |   39.632(R)|clk               |   0.000|
+led<3>        |   37.633(R)|clk               |   0.000|
+led<4>        |   37.771(R)|clk               |   0.000|
+led<5>        |   37.123(R)|clk               |   0.000|
+led<6>        |   37.747(R)|clk               |   0.000|
+led<7>        |   36.631(R)|clk               |   0.000|
+led<8>        |   38.894(R)|clk               |   0.000|
+led<9>        |   37.543(R)|clk               |   0.000|
+led<10>       |   38.755(R)|clk               |   0.000|
+led<11>       |   37.968(R)|clk               |   0.000|
+led<12>       |   29.172(R)|clk               |   0.000|
+led<13>       |   26.149(R)|clk               |   0.000|
+led<14>       |   27.548(R)|clk               |   0.000|
+led<15>       |   48.010(R)|clk               |   0.000|
+ram1_addr<0>  |   14.741(R)|clk               |   0.000|
+ram1_addr<1>  |   14.654(R)|clk               |   0.000|
+ram1_addr<2>  |   14.184(R)|clk               |   0.000|
+ram1_addr<3>  |   14.922(R)|clk               |   0.000|
+ram1_addr<4>  |   14.182(R)|clk               |   0.000|
+ram1_addr<5>  |   14.122(R)|clk               |   0.000|
+ram1_addr<6>  |   14.413(R)|clk               |   0.000|
+ram1_addr<7>  |   14.683(R)|clk               |   0.000|
+ram1_addr<8>  |   14.120(R)|clk               |   0.000|
+ram1_addr<9>  |   14.060(R)|clk               |   0.000|
+ram1_addr<10> |   14.123(R)|clk               |   0.000|
+ram1_addr<11> |   14.063(R)|clk               |   0.000|
+ram1_addr<12> |   14.050(R)|clk               |   0.000|
+ram1_addr<13> |   14.054(R)|clk               |   0.000|
+ram1_addr<14> |   14.044(R)|clk               |   0.000|
+ram1_addr<15> |   14.048(R)|clk               |   0.000|
+ram1_data<0>  |   14.848(R)|clk               |   0.000|
+ram1_data<1>  |   14.778(R)|clk               |   0.000|
+ram1_data<2>  |   14.839(R)|clk               |   0.000|
+ram1_data<3>  |   14.779(R)|clk               |   0.000|
+ram1_data<4>  |   14.842(R)|clk               |   0.000|
+ram1_data<5>  |   14.780(R)|clk               |   0.000|
+ram1_data<6>  |   15.108(R)|clk               |   0.000|
+ram1_data<7>  |   15.030(R)|clk               |   0.000|
+ram1_data<8>  |   14.841(R)|clk               |   0.000|
+ram1_data<9>  |   14.781(R)|clk               |   0.000|
+ram1_data<10> |   14.826(R)|clk               |   0.000|
+ram1_data<11> |   14.766(R)|clk               |   0.000|
+ram1_data<12> |   14.767(R)|clk               |   0.000|
+ram1_data<13> |   14.771(R)|clk               |   0.000|
+ram1_data<14> |   14.676(R)|clk               |   0.000|
+ram1_data<15> |   14.680(R)|clk               |   0.000|
+ram1_en       |   14.728(R)|clk               |   0.000|
+ram1_oe       |   15.688(R)|clk               |   0.000|
+ram1_we       |   15.008(R)|clk               |   0.000|
+ram2_addr<0>  |   15.997(R)|clk               |   0.000|
+ram2_addr<1>  |   16.515(R)|clk               |   0.000|
+ram2_addr<2>  |   15.836(R)|clk               |   0.000|
+ram2_addr<3>  |   16.104(R)|clk               |   0.000|
+ram2_addr<4>  |   16.455(R)|clk               |   0.000|
+ram2_addr<5>  |   16.758(R)|clk               |   0.000|
+ram2_addr<6>  |   16.565(R)|clk               |   0.000|
+ram2_addr<7>  |   18.017(R)|clk               |   0.000|
+ram2_addr<8>  |   17.128(R)|clk               |   0.000|
+ram2_addr<9>  |   16.955(R)|clk               |   0.000|
+ram2_addr<10> |   16.849(R)|clk               |   0.000|
+ram2_addr<11> |   17.062(R)|clk               |   0.000|
+ram2_addr<12> |   17.254(R)|clk               |   0.000|
+ram2_addr<13> |   16.859(R)|clk               |   0.000|
+ram2_addr<14> |   16.627(R)|clk               |   0.000|
+ram2_addr<15> |   15.951(R)|clk               |   0.000|
+ram2_data<0>  |   17.531(R)|clk               |   0.000|
+ram2_data<1>  |   17.415(R)|clk               |   0.000|
+ram2_data<2>  |   17.263(R)|clk               |   0.000|
+ram2_data<3>  |   17.265(R)|clk               |   0.000|
+ram2_data<4>  |   17.237(R)|clk               |   0.000|
+ram2_data<5>  |   19.660(R)|clk               |   0.000|
+ram2_data<6>  |   17.698(R)|clk               |   0.000|
+ram2_data<7>  |   16.850(R)|clk               |   0.000|
+ram2_data<8>  |   17.188(R)|clk               |   0.000|
+ram2_data<9>  |   18.280(R)|clk               |   0.000|
+ram2_data<10> |   16.862(R)|clk               |   0.000|
+ram2_data<11> |   16.920(R)|clk               |   0.000|
+ram2_data<12> |   17.703(R)|clk               |   0.000|
+ram2_data<13> |   18.589(R)|clk               |   0.000|
+ram2_data<14> |   16.514(R)|clk               |   0.000|
+ram2_data<15> |   18.578(R)|clk               |   0.000|
+ram2_oe       |   16.102(R)|clk               |   0.000|
+ram2_we       |   16.022(R)|clk               |   0.000|
+rdn           |   16.361(R)|clk               |   0.000|
+wrn           |   18.024(R)|clk               |   0.000|
+--------------+------------+------------------+--------+
+
+Clock clk_h to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+digit1<0>     |   15.195(R)|clk               |   0.000|
+digit1<1>     |   15.140(R)|clk               |   0.000|
+digit1<2>     |   15.499(R)|clk               |   0.000|
+digit1<3>     |   15.394(R)|clk               |   0.000|
+digit1<4>     |   15.251(R)|clk               |   0.000|
+digit1<5>     |   14.883(R)|clk               |   0.000|
+digit1<6>     |   15.524(R)|clk               |   0.000|
+digit2<0>     |   14.983(R)|clk               |   0.000|
+digit2<1>     |   16.110(R)|clk               |   0.000|
+digit2<2>     |   15.098(R)|clk               |   0.000|
+digit2<3>     |   14.679(R)|clk               |   0.000|
+digit2<4>     |   14.657(R)|clk               |   0.000|
+digit2<5>     |   15.176(R)|clk               |   0.000|
+digit2<6>     |   15.022(R)|clk               |   0.000|
+flash_OE      |   16.133(R)|clk               |   0.000|
+flash_addr<1> |   15.519(R)|clk               |   0.000|
+flash_addr<2> |   15.678(R)|clk               |   0.000|
+flash_addr<3> |   15.509(R)|clk               |   0.000|
+flash_addr<4> |   15.559(R)|clk               |   0.000|
+flash_addr<5> |   15.146(R)|clk               |   0.000|
+flash_addr<6> |   14.975(R)|clk               |   0.000|
+flash_addr<7> |   15.287(R)|clk               |   0.000|
+flash_addr<8> |   14.759(R)|clk               |   0.000|
+flash_addr<9> |   15.030(R)|clk               |   0.000|
+flash_addr<10>|   14.755(R)|clk               |   0.000|
+flash_addr<11>|   15.023(R)|clk               |   0.000|
+flash_addr<12>|   14.980(R)|clk               |   0.000|
+flash_addr<13>|   15.280(R)|clk               |   0.000|
+flash_addr<14>|   14.719(R)|clk               |   0.000|
+flash_addr<15>|   15.065(R)|clk               |   0.000|
+flash_addr<16>|   14.882(R)|clk               |   0.000|
+led<0>        |   38.441(R)|clk               |   0.000|
+led<1>        |   38.228(R)|clk               |   0.000|
+led<2>        |   39.609(R)|clk               |   0.000|
+led<3>        |   37.610(R)|clk               |   0.000|
+led<4>        |   37.748(R)|clk               |   0.000|
+led<5>        |   37.100(R)|clk               |   0.000|
+led<6>        |   37.724(R)|clk               |   0.000|
+led<7>        |   36.608(R)|clk               |   0.000|
+led<8>        |   38.871(R)|clk               |   0.000|
+led<9>        |   37.520(R)|clk               |   0.000|
+led<10>       |   38.732(R)|clk               |   0.000|
+led<11>       |   37.945(R)|clk               |   0.000|
+led<12>       |   29.149(R)|clk               |   0.000|
+led<13>       |   26.126(R)|clk               |   0.000|
+led<14>       |   27.525(R)|clk               |   0.000|
+led<15>       |   47.987(R)|clk               |   0.000|
+ram1_addr<0>  |   14.718(R)|clk               |   0.000|
+ram1_addr<1>  |   14.631(R)|clk               |   0.000|
+ram1_addr<2>  |   14.161(R)|clk               |   0.000|
+ram1_addr<3>  |   14.899(R)|clk               |   0.000|
+ram1_addr<4>  |   14.159(R)|clk               |   0.000|
+ram1_addr<5>  |   14.099(R)|clk               |   0.000|
+ram1_addr<6>  |   14.390(R)|clk               |   0.000|
+ram1_addr<7>  |   14.660(R)|clk               |   0.000|
+ram1_addr<8>  |   14.097(R)|clk               |   0.000|
+ram1_addr<9>  |   14.037(R)|clk               |   0.000|
+ram1_addr<10> |   14.100(R)|clk               |   0.000|
+ram1_addr<11> |   14.040(R)|clk               |   0.000|
+ram1_addr<12> |   14.027(R)|clk               |   0.000|
+ram1_addr<13> |   14.031(R)|clk               |   0.000|
+ram1_addr<14> |   14.021(R)|clk               |   0.000|
+ram1_addr<15> |   14.025(R)|clk               |   0.000|
+ram1_data<0>  |   14.825(R)|clk               |   0.000|
+ram1_data<1>  |   14.755(R)|clk               |   0.000|
+ram1_data<2>  |   14.816(R)|clk               |   0.000|
+ram1_data<3>  |   14.756(R)|clk               |   0.000|
+ram1_data<4>  |   14.819(R)|clk               |   0.000|
+ram1_data<5>  |   14.757(R)|clk               |   0.000|
+ram1_data<6>  |   15.085(R)|clk               |   0.000|
+ram1_data<7>  |   15.007(R)|clk               |   0.000|
+ram1_data<8>  |   14.818(R)|clk               |   0.000|
+ram1_data<9>  |   14.758(R)|clk               |   0.000|
+ram1_data<10> |   14.803(R)|clk               |   0.000|
+ram1_data<11> |   14.743(R)|clk               |   0.000|
+ram1_data<12> |   14.744(R)|clk               |   0.000|
+ram1_data<13> |   14.748(R)|clk               |   0.000|
+ram1_data<14> |   14.653(R)|clk               |   0.000|
+ram1_data<15> |   14.657(R)|clk               |   0.000|
+ram1_en       |   14.705(R)|clk               |   0.000|
+ram1_oe       |   15.665(R)|clk               |   0.000|
+ram1_we       |   14.985(R)|clk               |   0.000|
+ram2_addr<0>  |   15.974(R)|clk               |   0.000|
+ram2_addr<1>  |   16.492(R)|clk               |   0.000|
+ram2_addr<2>  |   15.813(R)|clk               |   0.000|
+ram2_addr<3>  |   16.081(R)|clk               |   0.000|
+ram2_addr<4>  |   16.432(R)|clk               |   0.000|
+ram2_addr<5>  |   16.735(R)|clk               |   0.000|
+ram2_addr<6>  |   16.542(R)|clk               |   0.000|
+ram2_addr<7>  |   17.994(R)|clk               |   0.000|
+ram2_addr<8>  |   17.105(R)|clk               |   0.000|
+ram2_addr<9>  |   16.932(R)|clk               |   0.000|
+ram2_addr<10> |   16.826(R)|clk               |   0.000|
+ram2_addr<11> |   17.039(R)|clk               |   0.000|
+ram2_addr<12> |   17.231(R)|clk               |   0.000|
+ram2_addr<13> |   16.836(R)|clk               |   0.000|
+ram2_addr<14> |   16.604(R)|clk               |   0.000|
+ram2_addr<15> |   15.928(R)|clk               |   0.000|
+ram2_data<0>  |   17.508(R)|clk               |   0.000|
+ram2_data<1>  |   17.392(R)|clk               |   0.000|
+ram2_data<2>  |   17.240(R)|clk               |   0.000|
+ram2_data<3>  |   17.242(R)|clk               |   0.000|
+ram2_data<4>  |   17.214(R)|clk               |   0.000|
+ram2_data<5>  |   19.637(R)|clk               |   0.000|
+ram2_data<6>  |   17.675(R)|clk               |   0.000|
+ram2_data<7>  |   16.827(R)|clk               |   0.000|
+ram2_data<8>  |   17.165(R)|clk               |   0.000|
+ram2_data<9>  |   18.257(R)|clk               |   0.000|
+ram2_data<10> |   16.839(R)|clk               |   0.000|
+ram2_data<11> |   16.897(R)|clk               |   0.000|
+ram2_data<12> |   17.680(R)|clk               |   0.000|
+ram2_data<13> |   18.566(R)|clk               |   0.000|
+ram2_data<14> |   16.491(R)|clk               |   0.000|
+ram2_data<15> |   18.555(R)|clk               |   0.000|
+ram2_oe       |   16.079(R)|clk               |   0.000|
+ram2_we       |   15.999(R)|clk               |   0.000|
+rdn           |   16.338(R)|clk               |   0.000|
+wrn           |   18.001(R)|clk               |   0.000|
+--------------+------------+------------------+--------+
+
+Clock sw<8> to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+digit1<0>     |   15.411(R)|clk               |   0.000|
+digit1<1>     |   15.356(R)|clk               |   0.000|
+digit1<2>     |   15.715(R)|clk               |   0.000|
+digit1<3>     |   15.610(R)|clk               |   0.000|
+digit1<4>     |   15.467(R)|clk               |   0.000|
+digit1<5>     |   15.099(R)|clk               |   0.000|
+digit1<6>     |   15.740(R)|clk               |   0.000|
+digit2<0>     |   15.199(R)|clk               |   0.000|
+digit2<1>     |   16.326(R)|clk               |   0.000|
+digit2<2>     |   15.314(R)|clk               |   0.000|
+digit2<3>     |   14.895(R)|clk               |   0.000|
+digit2<4>     |   14.873(R)|clk               |   0.000|
+digit2<5>     |   15.392(R)|clk               |   0.000|
+digit2<6>     |   15.238(R)|clk               |   0.000|
+flash_OE      |   16.349(R)|clk               |   0.000|
+flash_addr<1> |   15.735(R)|clk               |   0.000|
+flash_addr<2> |   15.894(R)|clk               |   0.000|
+flash_addr<3> |   15.725(R)|clk               |   0.000|
+flash_addr<4> |   15.775(R)|clk               |   0.000|
+flash_addr<5> |   15.362(R)|clk               |   0.000|
+flash_addr<6> |   15.191(R)|clk               |   0.000|
+flash_addr<7> |   15.503(R)|clk               |   0.000|
+flash_addr<8> |   14.975(R)|clk               |   0.000|
+flash_addr<9> |   15.246(R)|clk               |   0.000|
+flash_addr<10>|   14.971(R)|clk               |   0.000|
+flash_addr<11>|   15.239(R)|clk               |   0.000|
+flash_addr<12>|   15.196(R)|clk               |   0.000|
+flash_addr<13>|   15.496(R)|clk               |   0.000|
+flash_addr<14>|   14.935(R)|clk               |   0.000|
+flash_addr<15>|   15.281(R)|clk               |   0.000|
+flash_addr<16>|   15.098(R)|clk               |   0.000|
+led<0>        |   38.657(R)|clk               |   0.000|
+led<1>        |   38.444(R)|clk               |   0.000|
+led<2>        |   39.825(R)|clk               |   0.000|
+led<3>        |   37.826(R)|clk               |   0.000|
+led<4>        |   37.964(R)|clk               |   0.000|
+led<5>        |   37.316(R)|clk               |   0.000|
+led<6>        |   37.940(R)|clk               |   0.000|
+led<7>        |   36.824(R)|clk               |   0.000|
+led<8>        |   39.087(R)|clk               |   0.000|
+led<9>        |   37.736(R)|clk               |   0.000|
+led<10>       |   38.948(R)|clk               |   0.000|
+led<11>       |   38.161(R)|clk               |   0.000|
+led<12>       |   29.365(R)|clk               |   0.000|
+led<13>       |   26.342(R)|clk               |   0.000|
+led<14>       |   27.741(R)|clk               |   0.000|
+led<15>       |   48.203(R)|clk               |   0.000|
+ram1_addr<0>  |   14.934(R)|clk               |   0.000|
+ram1_addr<1>  |   14.847(R)|clk               |   0.000|
+ram1_addr<2>  |   14.377(R)|clk               |   0.000|
+ram1_addr<3>  |   15.115(R)|clk               |   0.000|
+ram1_addr<4>  |   14.375(R)|clk               |   0.000|
+ram1_addr<5>  |   14.315(R)|clk               |   0.000|
+ram1_addr<6>  |   14.606(R)|clk               |   0.000|
+ram1_addr<7>  |   14.876(R)|clk               |   0.000|
+ram1_addr<8>  |   14.313(R)|clk               |   0.000|
+ram1_addr<9>  |   14.253(R)|clk               |   0.000|
+ram1_addr<10> |   14.316(R)|clk               |   0.000|
+ram1_addr<11> |   14.256(R)|clk               |   0.000|
+ram1_addr<12> |   14.243(R)|clk               |   0.000|
+ram1_addr<13> |   14.247(R)|clk               |   0.000|
+ram1_addr<14> |   14.237(R)|clk               |   0.000|
+ram1_addr<15> |   14.241(R)|clk               |   0.000|
+ram1_data<0>  |   15.041(R)|clk               |   0.000|
+ram1_data<1>  |   14.971(R)|clk               |   0.000|
+ram1_data<2>  |   15.032(R)|clk               |   0.000|
+ram1_data<3>  |   14.972(R)|clk               |   0.000|
+ram1_data<4>  |   15.035(R)|clk               |   0.000|
+ram1_data<5>  |   14.973(R)|clk               |   0.000|
+ram1_data<6>  |   15.301(R)|clk               |   0.000|
+ram1_data<7>  |   15.223(R)|clk               |   0.000|
+ram1_data<8>  |   15.034(R)|clk               |   0.000|
+ram1_data<9>  |   14.974(R)|clk               |   0.000|
+ram1_data<10> |   15.019(R)|clk               |   0.000|
+ram1_data<11> |   14.959(R)|clk               |   0.000|
+ram1_data<12> |   14.960(R)|clk               |   0.000|
+ram1_data<13> |   14.964(R)|clk               |   0.000|
+ram1_data<14> |   14.869(R)|clk               |   0.000|
+ram1_data<15> |   14.873(R)|clk               |   0.000|
+ram1_en       |   14.921(R)|clk               |   0.000|
+ram1_oe       |   15.881(R)|clk               |   0.000|
+ram1_we       |   15.201(R)|clk               |   0.000|
+ram2_addr<0>  |   16.190(R)|clk               |   0.000|
+ram2_addr<1>  |   16.708(R)|clk               |   0.000|
+ram2_addr<2>  |   16.029(R)|clk               |   0.000|
+ram2_addr<3>  |   16.297(R)|clk               |   0.000|
+ram2_addr<4>  |   16.648(R)|clk               |   0.000|
+ram2_addr<5>  |   16.951(R)|clk               |   0.000|
+ram2_addr<6>  |   16.758(R)|clk               |   0.000|
+ram2_addr<7>  |   18.210(R)|clk               |   0.000|
+ram2_addr<8>  |   17.321(R)|clk               |   0.000|
+ram2_addr<9>  |   17.148(R)|clk               |   0.000|
+ram2_addr<10> |   17.042(R)|clk               |   0.000|
+ram2_addr<11> |   17.255(R)|clk               |   0.000|
+ram2_addr<12> |   17.447(R)|clk               |   0.000|
+ram2_addr<13> |   17.052(R)|clk               |   0.000|
+ram2_addr<14> |   16.820(R)|clk               |   0.000|
+ram2_addr<15> |   16.144(R)|clk               |   0.000|
+ram2_data<0>  |   17.724(R)|clk               |   0.000|
+ram2_data<1>  |   17.608(R)|clk               |   0.000|
+ram2_data<2>  |   17.456(R)|clk               |   0.000|
+ram2_data<3>  |   17.458(R)|clk               |   0.000|
+ram2_data<4>  |   17.430(R)|clk               |   0.000|
+ram2_data<5>  |   19.853(R)|clk               |   0.000|
+ram2_data<6>  |   17.891(R)|clk               |   0.000|
+ram2_data<7>  |   17.043(R)|clk               |   0.000|
+ram2_data<8>  |   17.381(R)|clk               |   0.000|
+ram2_data<9>  |   18.473(R)|clk               |   0.000|
+ram2_data<10> |   17.055(R)|clk               |   0.000|
+ram2_data<11> |   17.113(R)|clk               |   0.000|
+ram2_data<12> |   17.896(R)|clk               |   0.000|
+ram2_data<13> |   18.782(R)|clk               |   0.000|
+ram2_data<14> |   16.707(R)|clk               |   0.000|
+ram2_data<15> |   18.771(R)|clk               |   0.000|
+ram2_oe       |   16.295(R)|clk               |   0.000|
+ram2_we       |   16.215(R)|clk               |   0.000|
+rdn           |   16.554(R)|clk               |   0.000|
+wrn           |   18.217(R)|clk               |   0.000|
+--------------+------------+------------------+--------+
+
+Clock sw<9> to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+digit1<0>     |   15.025(R)|clk               |   0.000|
+digit1<1>     |   14.970(R)|clk               |   0.000|
+digit1<2>     |   15.329(R)|clk               |   0.000|
+digit1<3>     |   15.224(R)|clk               |   0.000|
+digit1<4>     |   15.081(R)|clk               |   0.000|
+digit1<5>     |   14.713(R)|clk               |   0.000|
+digit1<6>     |   15.354(R)|clk               |   0.000|
+digit2<0>     |   14.813(R)|clk               |   0.000|
+digit2<1>     |   15.940(R)|clk               |   0.000|
+digit2<2>     |   14.928(R)|clk               |   0.000|
+digit2<3>     |   14.509(R)|clk               |   0.000|
+digit2<4>     |   14.487(R)|clk               |   0.000|
+digit2<5>     |   15.006(R)|clk               |   0.000|
+digit2<6>     |   14.852(R)|clk               |   0.000|
+flash_OE      |   15.963(R)|clk               |   0.000|
+flash_addr<1> |   15.349(R)|clk               |   0.000|
+flash_addr<2> |   15.508(R)|clk               |   0.000|
+flash_addr<3> |   15.339(R)|clk               |   0.000|
+flash_addr<4> |   15.389(R)|clk               |   0.000|
+flash_addr<5> |   14.976(R)|clk               |   0.000|
+flash_addr<6> |   14.805(R)|clk               |   0.000|
+flash_addr<7> |   15.117(R)|clk               |   0.000|
+flash_addr<8> |   14.589(R)|clk               |   0.000|
+flash_addr<9> |   14.860(R)|clk               |   0.000|
+flash_addr<10>|   14.585(R)|clk               |   0.000|
+flash_addr<11>|   14.853(R)|clk               |   0.000|
+flash_addr<12>|   14.810(R)|clk               |   0.000|
+flash_addr<13>|   15.110(R)|clk               |   0.000|
+flash_addr<14>|   14.549(R)|clk               |   0.000|
+flash_addr<15>|   14.895(R)|clk               |   0.000|
+flash_addr<16>|   14.712(R)|clk               |   0.000|
+led<0>        |   38.271(R)|clk               |   0.000|
+led<1>        |   38.058(R)|clk               |   0.000|
+led<2>        |   39.439(R)|clk               |   0.000|
+led<3>        |   37.440(R)|clk               |   0.000|
+led<4>        |   37.578(R)|clk               |   0.000|
+led<5>        |   36.930(R)|clk               |   0.000|
+led<6>        |   37.554(R)|clk               |   0.000|
+led<7>        |   36.438(R)|clk               |   0.000|
+led<8>        |   38.701(R)|clk               |   0.000|
+led<9>        |   37.350(R)|clk               |   0.000|
+led<10>       |   38.562(R)|clk               |   0.000|
+led<11>       |   37.775(R)|clk               |   0.000|
+led<12>       |   28.979(R)|clk               |   0.000|
+led<13>       |   25.956(R)|clk               |   0.000|
+led<14>       |   27.355(R)|clk               |   0.000|
+led<15>       |   47.817(R)|clk               |   0.000|
+ram1_addr<0>  |   14.548(R)|clk               |   0.000|
+ram1_addr<1>  |   14.461(R)|clk               |   0.000|
+ram1_addr<2>  |   13.991(R)|clk               |   0.000|
+ram1_addr<3>  |   14.729(R)|clk               |   0.000|
+ram1_addr<4>  |   13.989(R)|clk               |   0.000|
+ram1_addr<5>  |   13.929(R)|clk               |   0.000|
+ram1_addr<6>  |   14.220(R)|clk               |   0.000|
+ram1_addr<7>  |   14.490(R)|clk               |   0.000|
+ram1_addr<8>  |   13.927(R)|clk               |   0.000|
+ram1_addr<9>  |   13.867(R)|clk               |   0.000|
+ram1_addr<10> |   13.930(R)|clk               |   0.000|
+ram1_addr<11> |   13.870(R)|clk               |   0.000|
+ram1_addr<12> |   13.857(R)|clk               |   0.000|
+ram1_addr<13> |   13.861(R)|clk               |   0.000|
+ram1_addr<14> |   13.851(R)|clk               |   0.000|
+ram1_addr<15> |   13.855(R)|clk               |   0.000|
+ram1_data<0>  |   14.655(R)|clk               |   0.000|
+ram1_data<1>  |   14.585(R)|clk               |   0.000|
+ram1_data<2>  |   14.646(R)|clk               |   0.000|
+ram1_data<3>  |   14.586(R)|clk               |   0.000|
+ram1_data<4>  |   14.649(R)|clk               |   0.000|
+ram1_data<5>  |   14.587(R)|clk               |   0.000|
+ram1_data<6>  |   14.915(R)|clk               |   0.000|
+ram1_data<7>  |   14.837(R)|clk               |   0.000|
+ram1_data<8>  |   14.648(R)|clk               |   0.000|
+ram1_data<9>  |   14.588(R)|clk               |   0.000|
+ram1_data<10> |   14.633(R)|clk               |   0.000|
+ram1_data<11> |   14.573(R)|clk               |   0.000|
+ram1_data<12> |   14.574(R)|clk               |   0.000|
+ram1_data<13> |   14.578(R)|clk               |   0.000|
+ram1_data<14> |   14.483(R)|clk               |   0.000|
+ram1_data<15> |   14.487(R)|clk               |   0.000|
+ram1_en       |   14.535(R)|clk               |   0.000|
+ram1_oe       |   15.495(R)|clk               |   0.000|
+ram1_we       |   14.815(R)|clk               |   0.000|
+ram2_addr<0>  |   15.804(R)|clk               |   0.000|
+ram2_addr<1>  |   16.322(R)|clk               |   0.000|
+ram2_addr<2>  |   15.643(R)|clk               |   0.000|
+ram2_addr<3>  |   15.911(R)|clk               |   0.000|
+ram2_addr<4>  |   16.262(R)|clk               |   0.000|
+ram2_addr<5>  |   16.565(R)|clk               |   0.000|
+ram2_addr<6>  |   16.372(R)|clk               |   0.000|
+ram2_addr<7>  |   17.824(R)|clk               |   0.000|
+ram2_addr<8>  |   16.935(R)|clk               |   0.000|
+ram2_addr<9>  |   16.762(R)|clk               |   0.000|
+ram2_addr<10> |   16.656(R)|clk               |   0.000|
+ram2_addr<11> |   16.869(R)|clk               |   0.000|
+ram2_addr<12> |   17.061(R)|clk               |   0.000|
+ram2_addr<13> |   16.666(R)|clk               |   0.000|
+ram2_addr<14> |   16.434(R)|clk               |   0.000|
+ram2_addr<15> |   15.758(R)|clk               |   0.000|
+ram2_data<0>  |   17.338(R)|clk               |   0.000|
+ram2_data<1>  |   17.222(R)|clk               |   0.000|
+ram2_data<2>  |   17.070(R)|clk               |   0.000|
+ram2_data<3>  |   17.072(R)|clk               |   0.000|
+ram2_data<4>  |   17.044(R)|clk               |   0.000|
+ram2_data<5>  |   19.467(R)|clk               |   0.000|
+ram2_data<6>  |   17.505(R)|clk               |   0.000|
+ram2_data<7>  |   16.657(R)|clk               |   0.000|
+ram2_data<8>  |   16.995(R)|clk               |   0.000|
+ram2_data<9>  |   18.087(R)|clk               |   0.000|
+ram2_data<10> |   16.669(R)|clk               |   0.000|
+ram2_data<11> |   16.727(R)|clk               |   0.000|
+ram2_data<12> |   17.510(R)|clk               |   0.000|
+ram2_data<13> |   18.396(R)|clk               |   0.000|
+ram2_data<14> |   16.321(R)|clk               |   0.000|
+ram2_data<15> |   18.385(R)|clk               |   0.000|
+ram2_oe       |   15.909(R)|clk               |   0.000|
+ram2_we       |   15.829(R)|clk               |   0.000|
+rdn           |   16.168(R)|clk               |   0.000|
+wrn           |   17.831(R)|clk               |   0.000|
+--------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_50m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50m        |   30.410|         |         |         |
+clk_h          |   30.410|         |         |         |
+sw<8>          |   30.410|         |         |         |
+sw<9>          |   30.410|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_h
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50m        |   30.410|         |         |         |
+clk_h          |   30.410|         |         |         |
+sw<8>          |   30.410|         |         |         |
+sw<9>          |   30.410|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sw<8>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50m        |   30.410|         |         |         |
+clk_h          |   30.410|         |         |         |
+sw<8>          |   30.410|         |         |         |
+sw<9>          |   30.410|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sw<9>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50m        |   30.410|         |         |         |
+clk_h          |   30.410|         |         |         |
+sw<8>          |   30.410|         |         |         |
+sw<9>          |   30.410|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk_50m        |led<0>         |   12.374|
+clk_h          |led<0>         |   12.351|
+rst            |led<0>         |   29.769|
+rst            |led<1>         |   29.435|
+rst            |led<2>         |   31.095|
+rst            |led<3>         |   29.096|
+rst            |led<4>         |   28.835|
+rst            |led<5>         |   29.135|
+rst            |led<6>         |   28.453|
+rst            |led<7>         |   27.575|
+rst            |led<8>         |   30.357|
+rst            |led<9>         |   29.644|
+rst            |led<10>        |   30.530|
+rst            |led<11>        |   28.723|
+rst            |led<15>        |   39.456|
+sw<0>          |led<0>         |   22.054|
+sw<0>          |led<1>         |   20.616|
+sw<0>          |led<2>         |   22.362|
+sw<0>          |led<3>         |   20.332|
+sw<0>          |led<4>         |   20.604|
+sw<0>          |led<5>         |   20.893|
+sw<0>          |led<6>         |   21.309|
+sw<0>          |led<7>         |   21.096|
+sw<0>          |led<8>         |   21.163|
+sw<0>          |led<9>         |   21.516|
+sw<0>          |led<10>        |   21.545|
+sw<0>          |led<11>        |   22.342|
+sw<0>          |led<12>        |   21.064|
+sw<0>          |led<13>        |   19.992|
+sw<0>          |led<14>        |   19.994|
+sw<0>          |led<15>        |   20.054|
+sw<1>          |led<0>         |   21.955|
+sw<1>          |led<1>         |   20.517|
+sw<1>          |led<2>         |   22.263|
+sw<1>          |led<3>         |   20.233|
+sw<1>          |led<4>         |   20.505|
+sw<1>          |led<5>         |   20.794|
+sw<1>          |led<6>         |   21.210|
+sw<1>          |led<7>         |   20.997|
+sw<1>          |led<8>         |   21.064|
+sw<1>          |led<9>         |   21.417|
+sw<1>          |led<10>        |   21.446|
+sw<1>          |led<11>        |   22.243|
+sw<1>          |led<12>        |   20.965|
+sw<1>          |led<13>        |   19.893|
+sw<1>          |led<14>        |   19.895|
+sw<1>          |led<15>        |   19.955|
+sw<2>          |led<0>         |   22.280|
+sw<2>          |led<1>         |   20.842|
+sw<2>          |led<2>         |   22.588|
+sw<2>          |led<3>         |   20.558|
+sw<2>          |led<4>         |   20.830|
+sw<2>          |led<5>         |   21.119|
+sw<2>          |led<6>         |   21.535|
+sw<2>          |led<7>         |   21.322|
+sw<2>          |led<8>         |   21.389|
+sw<2>          |led<9>         |   21.742|
+sw<2>          |led<10>        |   21.771|
+sw<2>          |led<11>        |   22.568|
+sw<2>          |led<12>        |   21.290|
+sw<2>          |led<13>        |   20.218|
+sw<2>          |led<14>        |   20.220|
+sw<2>          |led<15>        |   20.280|
+sw<3>          |led<0>         |   22.474|
+sw<3>          |led<1>         |   21.036|
+sw<3>          |led<2>         |   22.782|
+sw<3>          |led<3>         |   20.752|
+sw<3>          |led<4>         |   21.024|
+sw<3>          |led<5>         |   21.313|
+sw<3>          |led<6>         |   21.729|
+sw<3>          |led<7>         |   21.516|
+sw<3>          |led<8>         |   21.583|
+sw<3>          |led<9>         |   21.936|
+sw<3>          |led<10>        |   21.965|
+sw<3>          |led<11>        |   22.762|
+sw<3>          |led<12>        |   21.484|
+sw<3>          |led<13>        |   20.412|
+sw<3>          |led<14>        |   20.414|
+sw<3>          |led<15>        |   20.474|
+sw<4>          |led<0>         |   22.226|
+sw<4>          |led<1>         |   21.328|
+sw<4>          |led<2>         |   22.080|
+sw<4>          |led<3>         |   20.320|
+sw<4>          |led<4>         |   21.345|
+sw<4>          |led<5>         |   21.394|
+sw<4>          |led<6>         |   21.988|
+sw<4>          |led<7>         |   21.156|
+sw<4>          |led<8>         |   21.577|
+sw<4>          |led<9>         |   22.512|
+sw<4>          |led<10>        |   21.693|
+sw<4>          |led<11>        |   22.647|
+sw<4>          |led<12>        |   21.602|
+sw<4>          |led<13>        |   20.214|
+sw<4>          |led<14>        |   20.207|
+sw<4>          |led<15>        |   21.458|
+sw<5>          |led<0>         |   21.867|
+sw<5>          |led<1>         |   20.969|
+sw<5>          |led<2>         |   21.721|
+sw<5>          |led<3>         |   19.961|
+sw<5>          |led<4>         |   20.986|
+sw<5>          |led<5>         |   21.035|
+sw<5>          |led<6>         |   21.629|
+sw<5>          |led<7>         |   20.797|
+sw<5>          |led<8>         |   21.218|
+sw<5>          |led<9>         |   22.153|
+sw<5>          |led<10>        |   21.334|
+sw<5>          |led<11>        |   22.288|
+sw<5>          |led<12>        |   21.243|
+sw<5>          |led<13>        |   19.855|
+sw<5>          |led<14>        |   19.848|
+sw<5>          |led<15>        |   21.099|
+sw<6>          |led<0>         |   22.384|
+sw<6>          |led<1>         |   21.486|
+sw<6>          |led<2>         |   22.238|
+sw<6>          |led<3>         |   20.478|
+sw<6>          |led<4>         |   21.503|
+sw<6>          |led<5>         |   21.552|
+sw<6>          |led<6>         |   22.146|
+sw<6>          |led<7>         |   21.314|
+sw<6>          |led<8>         |   21.735|
+sw<6>          |led<9>         |   22.670|
+sw<6>          |led<10>        |   21.851|
+sw<6>          |led<11>        |   22.805|
+sw<6>          |led<12>        |   21.760|
+sw<6>          |led<13>        |   20.372|
+sw<6>          |led<14>        |   20.365|
+sw<6>          |led<15>        |   21.616|
+sw<7>          |led<0>         |   15.059|
+sw<7>          |led<1>         |   13.956|
+sw<7>          |led<2>         |   14.439|
+sw<7>          |led<3>         |   13.334|
+sw<7>          |led<4>         |   13.872|
+sw<7>          |led<5>         |   14.506|
+sw<7>          |led<6>         |   15.694|
+sw<7>          |led<7>         |   16.060|
+sw<7>          |led<8>         |   14.422|
+sw<7>          |led<9>         |   15.067|
+sw<7>          |led<10>        |   15.130|
+sw<7>          |led<11>        |   15.282|
+sw<7>          |led<12>        |   15.235|
+sw<7>          |led<13>        |   14.561|
+sw<7>          |led<14>        |   14.607|
+sw<7>          |led<15>        |   13.571|
+sw<8>          |led<0>         |   15.827|
+sw<8>          |led<1>         |   14.724|
+sw<8>          |led<2>         |   15.207|
+sw<8>          |led<3>         |   14.102|
+sw<8>          |led<4>         |   14.640|
+sw<8>          |led<5>         |   15.274|
+sw<8>          |led<6>         |   16.462|
+sw<8>          |led<7>         |   16.828|
+sw<8>          |led<8>         |   15.190|
+sw<8>          |led<9>         |   15.835|
+sw<8>          |led<10>        |   15.898|
+sw<8>          |led<11>        |   16.050|
+sw<8>          |led<12>        |   16.003|
+sw<8>          |led<13>        |   15.329|
+sw<8>          |led<14>        |   15.375|
+sw<8>          |led<15>        |   14.339|
+sw<9>          |led<0>         |   15.880|
+sw<9>          |led<1>         |   14.777|
+sw<9>          |led<2>         |   15.260|
+sw<9>          |led<3>         |   14.155|
+sw<9>          |led<4>         |   14.693|
+sw<9>          |led<5>         |   15.327|
+sw<9>          |led<6>         |   16.515|
+sw<9>          |led<7>         |   16.881|
+sw<9>          |led<8>         |   15.243|
+sw<9>          |led<9>         |   15.888|
+sw<9>          |led<10>        |   15.951|
+sw<9>          |led<11>        |   16.103|
+sw<9>          |led<12>        |   16.056|
+sw<9>          |led<13>        |   15.382|
+sw<9>          |led<14>        |   15.428|
+sw<9>          |led<15>        |   14.392|
+sw<10>         |led<0>         |   15.742|
+sw<10>         |led<1>         |   14.639|
+sw<10>         |led<2>         |   15.122|
+sw<10>         |led<3>         |   14.017|
+sw<10>         |led<4>         |   14.555|
+sw<10>         |led<5>         |   15.189|
+sw<10>         |led<6>         |   16.377|
+sw<10>         |led<7>         |   16.743|
+sw<10>         |led<8>         |   15.105|
+sw<10>         |led<9>         |   15.750|
+sw<10>         |led<10>        |   15.813|
+sw<10>         |led<11>        |   15.965|
+sw<10>         |led<12>        |   15.918|
+sw<10>         |led<13>        |   15.244|
+sw<10>         |led<14>        |   15.290|
+sw<10>         |led<15>        |   14.254|
+sw<11>         |led<0>         |   15.750|
+sw<11>         |led<1>         |   14.647|
+sw<11>         |led<2>         |   15.130|
+sw<11>         |led<3>         |   14.025|
+sw<11>         |led<4>         |   14.563|
+sw<11>         |led<5>         |   15.197|
+sw<11>         |led<6>         |   16.385|
+sw<11>         |led<7>         |   16.751|
+sw<11>         |led<8>         |   15.113|
+sw<11>         |led<9>         |   15.758|
+sw<11>         |led<10>        |   15.821|
+sw<11>         |led<11>        |   15.973|
+sw<11>         |led<12>        |   15.926|
+sw<11>         |led<13>        |   15.252|
+sw<11>         |led<14>        |   15.298|
+sw<11>         |led<15>        |   14.262|
+sw<12>         |led<0>         |   16.101|
+sw<12>         |led<1>         |   14.998|
+sw<12>         |led<2>         |   15.481|
+sw<12>         |led<3>         |   14.376|
+sw<12>         |led<4>         |   14.914|
+sw<12>         |led<5>         |   15.548|
+sw<12>         |led<6>         |   16.736|
+sw<12>         |led<7>         |   17.102|
+sw<12>         |led<8>         |   15.464|
+sw<12>         |led<9>         |   16.109|
+sw<12>         |led<10>        |   16.172|
+sw<12>         |led<11>        |   16.324|
+sw<12>         |led<12>        |   16.277|
+sw<12>         |led<13>        |   15.603|
+sw<12>         |led<14>        |   15.649|
+sw<12>         |led<15>        |   14.613|
+sw<13>         |led<0>         |   15.718|
+sw<13>         |led<1>         |   14.615|
+sw<13>         |led<2>         |   15.098|
+sw<13>         |led<3>         |   13.993|
+sw<13>         |led<4>         |   14.531|
+sw<13>         |led<5>         |   15.165|
+sw<13>         |led<6>         |   16.353|
+sw<13>         |led<7>         |   16.719|
+sw<13>         |led<8>         |   15.081|
+sw<13>         |led<9>         |   15.726|
+sw<13>         |led<10>        |   15.789|
+sw<13>         |led<11>        |   15.941|
+sw<13>         |led<12>        |   15.894|
+sw<13>         |led<13>        |   15.220|
+sw<13>         |led<14>        |   15.266|
+sw<13>         |led<15>        |   14.230|
+sw<14>         |led<0>         |   20.194|
+sw<14>         |led<1>         |   18.756|
+sw<14>         |led<2>         |   20.502|
+sw<14>         |led<3>         |   18.472|
+sw<14>         |led<4>         |   18.826|
+sw<14>         |led<5>         |   19.033|
+sw<14>         |led<6>         |   19.449|
+sw<14>         |led<7>         |   19.236|
+sw<14>         |led<8>         |   19.303|
+sw<14>         |led<9>         |   19.824|
+sw<14>         |led<10>        |   19.685|
+sw<14>         |led<11>        |   20.482|
+sw<14>         |led<12>        |   19.204|
+sw<14>         |led<13>        |   18.132|
+sw<14>         |led<14>        |   18.134|
+sw<14>         |led<15>        |   18.939|
+sw<15>         |led<0>         |   19.608|
+sw<15>         |led<1>         |   18.170|
+sw<15>         |led<2>         |   19.916|
+sw<15>         |led<3>         |   17.886|
+sw<15>         |led<4>         |   18.170|
+sw<15>         |led<5>         |   18.447|
+sw<15>         |led<6>         |   18.863|
+sw<15>         |led<7>         |   18.650|
+sw<15>         |led<8>         |   18.717|
+sw<15>         |led<9>         |   19.101|
+sw<15>         |led<10>        |   19.099|
+sw<15>         |led<11>        |   19.896|
+sw<15>         |led<12>        |   18.618|
+sw<15>         |led<13>        |   17.546|
+sw<15>         |led<14>        |   17.548|
+sw<15>         |led<15>        |   18.283|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Nov 30 00:14:06 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 230 MB
+
+
+

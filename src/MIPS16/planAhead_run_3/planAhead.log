@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Nov 25 19:25:25 2016
+# Process ID: 2292
+# Log file: D:/xlinix/MIPS16/planAhead_run_3/planAhead.log
+# Journal file: D:/xlinix/MIPS16/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/xlinix/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/xlinix/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/xlinix/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/xlinix/MIPS16/pa.fromNetlist.tcl
+# create_project -name MIPS16 -dir "D:/xlinix/MIPS16/planAhead_run_4" -part xc3s1200efg320-4
+create_project: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 419.570 ; gain = 50.055
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/xlinix/MIPS16/MIPS.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/xlinix/MIPS16} }
+# set_property target_constrs_file "MIPS.ucf" [current_fileset -constrset]
+Adding file 'D:/xlinix/MIPS16/MIPS.ucf' to fileset 'constrs_1'
+# add_files [list {MIPS.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s1200efg320-4
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MIPS.ngc ...
+WARNING:NetListWriters:298 - No output is written to MIPS.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus u_id_exe/imm_o<15 : 0> on block MIPS is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus u_mem/Mcompar_ram1_en_cmp_ge0000_lut<5 :
+   1> on block MIPS is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file MIPS.edif ...
+ngc2edif: Total memory usage is 94144 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design MIPS.ngc ...
+WARNING:NetListWriters:298 - No output is written to MIPS.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus u_id_exe/imm_o<15 : 0> on block MIPS is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus u_mem/Mcompar_ram1_en_cmp_ge0000_lut<5 :
+   1> on block MIPS is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file MIPS.edif ...
+ngc2edif: Total memory usage is 94144 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-2292-DESKTOP-M950V8Q/ngc2edif/MIPS.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-2292-DESKTOP-M950V8Q/ngc2edif/MIPS.edif]
+INFO: [Designutils 20-910] Reading macro library D:/xlinix/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [D:/xlinix/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/xlinix/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'MIPS' is not ideal for floorplanning, since the cellview 'MIPS' defined in file 'MIPS.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from D:/xlinix/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/ClockRegion.xml
+Loading clock buffers from D:/xlinix/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/ClockBuffers.xml
+Loading package from D:/xlinix/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/fg320/Package.xml
+Loading io standards from D:/xlinix/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/xlinix/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/fg320/SSORules.xml
+Loading list of drcs for the architecture : D:/xlinix/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/xlinix/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library D:/xlinix/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/xlinix/MIPS16/MIPS.ucf]
+Finished Parsing UCF File [D:/xlinix/MIPS16/MIPS.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: ada550ab
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+link_design: Time (s): elapsed = 00:00:23 . Memory (MB): peak = 561.027 ; gain = 141.457
+INFO: [Common 17-344] 'link_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See D:/xlinix/MIPS16\planAhead_pid2292.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Nov 25 19:26:30 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,1557 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: MIPS.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPS.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPS"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : MIPS
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/xlinix/MIPS16/ImmExtend.vhd" in Library work.
+Architecture behavioral of Entity immextend is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/Registers.vhd" in Library work.
+Entity <registers> compiled.
+Entity <registers> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/xlinix/MIPS16/MEM.vhd" in Library work.
+Architecture behavioral of Entity mem is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/ForwardUnit.vhd" in Library work.
+Architecture behavioral of Entity forwardunit is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/BranchControl.vhd" in Library work.
+Architecture behavioral of Entity branchcontrol is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/IF_ID.vhd" in Library work.
+Architecture behavioral of Entity if_id is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/ID.vhd" in Library work.
+Architecture behavioral of Entity id is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/ID_EX.vhd" in Library work.
+Architecture behavioral of Entity id_ex is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/EX.vhd" in Library work.
+Architecture behavioral of Entity ex is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/EX_MEM.vhd" in Library work.
+Architecture behavioral of Entity ex_mem is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/MEM_WB.vhd" in Library work.
+Architecture behavioral of Entity mem_wb is up to date.
+Compiling vhdl file "D:/xlinix/MIPS16/MIPS.vhd" in Library work.
+Architecture behavioral of Entity mips is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MIPS> in library <work> (architecture <behavioral>).
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 80: Default value is ignored for signal <int_r0>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 81: Default value is ignored for signal <int_r1>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 83: Default value is ignored for signal <int_signal>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 84: Default value is ignored for signal <int_pc>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 93: Default value is ignored for signal <if_ins_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 94: Default value is ignored for signal <if_pc_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 103: Default value is ignored for signal <id_ins_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 104: Default value is ignored for signal <id_pc_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 107: Default value is ignored for signal <id_A_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 108: Default value is ignored for signal <id_B_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 109: Default value is ignored for signal <id_S_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 110: Default value is ignored for signal <id_ForwardData_ALU1_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 111: Default value is ignored for signal <id_ForwardData_MEM1_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 112: Default value is ignored for signal <id_ForwardData_ALU2_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 113: Default value is ignored for signal <id_ForwardData_MEM2_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 149: Default value is ignored for signal <id_A_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 150: Default value is ignored for signal <id_B_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 151: Default value is ignored for signal <id_S_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 152: Default value is ignored for signal <id_imm_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 180: Default value is ignored for signal <id_exe_pc_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 181: Default value is ignored for signal <id_exe_A_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 182: Default value is ignored for signal <id_exe_B_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 183: Default value is ignored for signal <id_exe_S_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 187: Default value is ignored for signal <id_exe_imm_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 201: Default value is ignored for signal <exe_alu_out_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 203: Default value is ignored for signal <exe_mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 210: Default value is ignored for signal <exe_mem_mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 212: Default value is ignored for signal <exe_mem_alu_output_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 224: Default value is ignored for signal <mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 239: Default value is ignored for signal <mem_wb_alu_output_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 240: Default value is ignored for signal <mem_wb_mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 241: Default value is ignored for signal <mem_wb_wb_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 885: Default value is ignored for signal <r0_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 886: Default value is ignored for signal <r1_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 887: Default value is ignored for signal <r2_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 888: Default value is ignored for signal <r3_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 889: Default value is ignored for signal <r4_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 890: Default value is ignored for signal <r5_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 891: Default value is ignored for signal <r6_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 892: Default value is ignored for signal <r7_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 893: Default value is ignored for signal <T_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 894: Default value is ignored for signal <IH_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 895: Default value is ignored for signal <SP_o>.
+
+Analyzing hierarchy for entity <ImmExtend> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Registers> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MEM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ForwardUnit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BranchControl> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IF_ID> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ID> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ID_EX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <EX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <EX_MEM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MEM_WB> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MIPS> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 80: Default value is ignored for signal <int_r0>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 81: Default value is ignored for signal <int_r1>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 83: Default value is ignored for signal <int_signal>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 84: Default value is ignored for signal <int_pc>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 93: Default value is ignored for signal <if_ins_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 94: Default value is ignored for signal <if_pc_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 103: Default value is ignored for signal <id_ins_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 104: Default value is ignored for signal <id_pc_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 107: Default value is ignored for signal <id_A_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 108: Default value is ignored for signal <id_B_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 109: Default value is ignored for signal <id_S_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 110: Default value is ignored for signal <id_ForwardData_ALU1_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 111: Default value is ignored for signal <id_ForwardData_MEM1_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 112: Default value is ignored for signal <id_ForwardData_ALU2_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 113: Default value is ignored for signal <id_ForwardData_MEM2_i>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 149: Default value is ignored for signal <id_A_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 150: Default value is ignored for signal <id_B_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 151: Default value is ignored for signal <id_S_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 152: Default value is ignored for signal <id_imm_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 180: Default value is ignored for signal <id_exe_pc_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 181: Default value is ignored for signal <id_exe_A_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 182: Default value is ignored for signal <id_exe_B_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 183: Default value is ignored for signal <id_exe_S_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 187: Default value is ignored for signal <id_exe_imm_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 201: Default value is ignored for signal <exe_alu_out_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 203: Default value is ignored for signal <exe_mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 210: Default value is ignored for signal <exe_mem_mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 212: Default value is ignored for signal <exe_mem_alu_output_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 224: Default value is ignored for signal <mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 239: Default value is ignored for signal <mem_wb_alu_output_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 240: Default value is ignored for signal <mem_wb_mem_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 241: Default value is ignored for signal <mem_wb_wb_data_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 885: Default value is ignored for signal <r0_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 886: Default value is ignored for signal <r1_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 887: Default value is ignored for signal <r2_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 888: Default value is ignored for signal <r3_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 889: Default value is ignored for signal <r4_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 890: Default value is ignored for signal <r5_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 891: Default value is ignored for signal <r6_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 892: Default value is ignored for signal <r7_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 893: Default value is ignored for signal <T_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 894: Default value is ignored for signal <IH_o>.
+WARNING:Xst:2094 - "D:/xlinix/MIPS16/MIPS.vhd" line 895: Default value is ignored for signal <SP_o>.
+WARNING:Xst:819 - "D:/xlinix/MIPS16/MIPS.vhd" line 903: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk_h>, <clk_50m>
+WARNING:Xst:819 - "D:/xlinix/MIPS16/MIPS.vhd" line 915: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <r0_o>, <r1_o>, <r2_o>, <r3_o>, <r4_o>, <r5_o>, <r6_o>, <r7_o>, <T_o>, <IH_o>, <SP_o>, <mem_wb_wb_data_o>, <id_ins_o>, <if_ins_o>, <id_pc_o>, <if_pc_o>, <exe_mem_alu_output_o>, <mem_wb_alu_output_o>, <id_exe_pc_o>, <pc_branch_target_addr_i>, <pc_branch_flag_i>, <id_branch_o>, <id_btype_o>, <id_A_o>, <flash_complete>
+Entity <MIPS> analyzed. Unit <MIPS> generated.
+
+Analyzing Entity <ImmExtend> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ImmExtend.vhd" line 109: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ImmExtend.vhd" line 119: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ImmExtend.vhd" line 129: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ImmExtend.vhd" line 139: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ImmExtend.vhd" line 139: Mux is complete : default of case is discarded
+Entity <ImmExtend> analyzed. Unit <ImmExtend> generated.
+
+Analyzing Entity <Registers> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/xlinix/MIPS16/Registers.vhd" line 198: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <SpRegWrite_i>, <WriteReg>, <WriteData>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/Registers.vhd" line 236: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/Registers.vhd" line 217: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <RegWrite>, <WriteReg>, <WriteData>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/Registers.vhd" line 267: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/Registers.vhd" line 248: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <RegWrite>, <WriteReg>, <WriteData>
+Entity <Registers> analyzed. Unit <Registers> generated.
+
+Analyzing Entity <MEM> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/xlinix/MIPS16/MEM.vhd" line 108: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <MEMAddr_i>, <MemRead_i>
+INFO:Xst:2679 - Register <ram2_en> in unit <MEM> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flash_CE> in unit <MEM> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flash_WE> in unit <MEM> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flash_byte> in unit <MEM> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flash_vpen> in unit <MEM> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flash_RP> in unit <MEM> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flash_data> in unit <MEM> has a constant value of ZZZZZZZZZZZZZZZZ during circuit operation. The register is replaced by logic.
+Entity <MEM> analyzed. Unit <MEM> generated.
+
+Analyzing Entity <ForwardUnit> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 124: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 147: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 111: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <exe_mem_RegData>, <mem_wb_WriteSpReg>, <mem_wb_SpRegWrite>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 178: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 165: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <exe_mem_RegData>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 205: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 196: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <exe_mem_RegData>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 228: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 219: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <exe_mem_RegData>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 255: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 271: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 242: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <id_jump>, <id_branch>, <exe_RegWrite>, <exe_RegDst>, <id_rx>, <exe_RegData>, <exe_mem_RegWrite>, <exe_mem_RegDst>, <exe_mem_RegData>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 303: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 319: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/ForwardUnit.vhd" line 290: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <id_jump>, <id_branch>, <exe_WriteSpReg>, <exe_SpRegWrite>, <id_sp>, <exe_RegData>, <exe_mem_WriteSpReg>, <exe_mem_SpRegWrite>, <exe_mem_RegData>
+Entity <ForwardUnit> analyzed. Unit <ForwardUnit> generated.
+
+Analyzing Entity <BranchControl> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/xlinix/MIPS16/BranchControl.vhd" line 93: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/BranchControl.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <zero16>
+Entity <BranchControl> analyzed. Unit <BranchControl> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <IF_ID> in library <work> (Architecture <behavioral>).
+Entity <IF_ID> analyzed. Unit <IF_ID> generated.
+
+Analyzing Entity <ID> in library <work> (Architecture <behavioral>).
+Entity <ID> analyzed. Unit <ID> generated.
+
+Analyzing Entity <ID_EX> in library <work> (Architecture <behavioral>).
+Entity <ID_EX> analyzed. Unit <ID_EX> generated.
+
+Analyzing Entity <EX> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/xlinix/MIPS16/EX.vhd" line 171: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/EX.vhd" line 183: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/EX.vhd" line 158: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <A_i>, <S_i>, <imm_i>, <pc_i>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/EX.vhd" line 200: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/EX.vhd" line 212: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/EX.vhd" line 191: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <B_i>, <imm_i>
+WARNING:Xst:819 - "D:/xlinix/MIPS16/EX.vhd" line 219: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rx_i>, <ry_i>, <rz_i>
+INFO:Xst:1561 - "D:/xlinix/MIPS16/EX.vhd" line 252: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/EX.vhd" line 271: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/xlinix/MIPS16/EX.vhd" line 271: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/EX.vhd" line 234: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <A_i>, <B_i>
+Entity <EX> analyzed. Unit <EX> generated.
+
+Analyzing Entity <EX_MEM> in library <work> (Architecture <behavioral>).
+Entity <EX_MEM> analyzed. Unit <EX_MEM> generated.
+
+Analyzing Entity <MEM_WB> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/xlinix/MIPS16/MEM_WB.vhd" line 118: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/xlinix/MIPS16/MEM_WB.vhd" line 87: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rst>
+INFO:Xst:2679 - Register <RegData_o> in unit <MEM_WB> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <MEM_WB> analyzed. Unit <MEM_WB> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2561 - Always blocking tristate driving signal <flash_data> in unit <MEM> is removed.
+
+Synthesizing Unit <ImmExtend>.
+    Related source file is "D:/xlinix/MIPS16/ImmExtend.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <ImmOutput>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <ImmExtend> synthesized.
+
+
+Synthesizing Unit <Registers>.
+    Related source file is "D:/xlinix/MIPS16/Registers.vhd".
+WARNING:Xst:1780 - Signal <now_s> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit comparator equal for signal <A_o$cmp_eq0000> created at line 241.
+    Found 3-bit comparator equal for signal <B_o$cmp_eq0000> created at line 272.
+    Found 16-bit register for signal <IH>.
+    Found 16-bit register for signal <int_buffer_r0>.
+    Found 16-bit register for signal <int_buffer_r1>.
+    Found 16-bit register for signal <r0>.
+    Found 16-bit register for signal <r1>.
+    Found 16-bit register for signal <r2>.
+    Found 16-bit register for signal <r3>.
+    Found 16-bit register for signal <r4>.
+    Found 16-bit register for signal <r5>.
+    Found 16-bit register for signal <r6>.
+    Found 16-bit register for signal <r7>.
+    Found 2-bit comparator equal for signal <S_o$cmp_eq0000> created at line 211.
+    Found 16-bit register for signal <SP>.
+    Found 16-bit register for signal <T>.
+    Summary:
+	inferred 208 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <Registers> synthesized.
+
+
+Synthesizing Unit <MEM>.
+    Related source file is "D:/xlinix/MIPS16/MEM.vhd".
+INFO:Xst:1799 - State s8 is never reached in FSM <flash_now_s>.
+INFO:Xst:1799 - State s9 is never reached in FSM <flash_now_s>.
+INFO:Xst:1799 - State s10 is never reached in FSM <flash_now_s>.
+INFO:Xst:1799 - State s5 is never reached in FSM <ram2_now_s>.
+INFO:Xst:1799 - State s6 is never reached in FSM <ram2_now_s>.
+INFO:Xst:1799 - State s7 is never reached in FSM <ram2_now_s>.
+INFO:Xst:1799 - State s8 is never reached in FSM <ram2_now_s>.
+INFO:Xst:1799 - State s9 is never reached in FSM <ram2_now_s>.
+INFO:Xst:1799 - State s10 is never reached in FSM <ram2_now_s>.
+INFO:Xst:1799 - State s4 is never reached in FSM <ram2_now_s>.
+INFO:Xst:1799 - State s4 is never reached in FSM <ram1_now_s>.
+INFO:Xst:1799 - State s5 is never reached in FSM <ram1_now_s>.
+INFO:Xst:1799 - State s6 is never reached in FSM <ram1_now_s>.
+INFO:Xst:1799 - State s7 is never reached in FSM <ram1_now_s>.
+INFO:Xst:1799 - State s8 is never reached in FSM <ram1_now_s>.
+INFO:Xst:1799 - State s9 is never reached in FSM <ram1_now_s>.
+INFO:Xst:1799 - State s10 is never reached in FSM <ram1_now_s>.
+    Found finite state machine <FSM_0> for signal <flash_now_s>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_now_s$and0000       (positive)           |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <ram2_now_s>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_complete            (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <ram1_now_s>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_complete            (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <ram1_we>.
+    Found 23-bit register for signal <flash_addr>.
+    Found 1-bit register for signal <flash_complete_o>.
+    Found 16-bit tristate buffer for signal <ram1_data>.
+    Found 16-bit register for signal <pro_addr_o>.
+    Found 16-bit register for signal <ram1_addr>.
+    Found 1-bit register for signal <ram2_oe>.
+    Found 16-bit register for signal <Ins_o>.
+    Found 16-bit tristate buffer for signal <ram2_data>.
+    Found 1-bit register for signal <ram1_en>.
+    Found 16-bit register for signal <ram2_addr>.
+    Found 1-bit register for signal <ram2_we>.
+    Found 1-bit register for signal <rdn>.
+    Found 1-bit register for signal <wrn>.
+    Found 1-bit register for signal <ram1_oe>.
+    Found 1-bit register for signal <flash_OE>.
+    Found 1-bit register for signal <flash_complete>.
+    Found 16-bit comparator greater for signal <flash_complete$cmp_gt0000> created at line 262.
+    Found 1-bit register for signal <mem1_stall_o>.
+    Found 1-bit register for signal <mem2_stall_o>.
+    Found 1-bit register for signal <Mtridata_ram1_data<0>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<10>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<11>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<12>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<13>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<14>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<15>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<1>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<2>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<3>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<4>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<5>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<6>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<7>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<8>> created at line 282.
+    Found 1-bit register for signal <Mtridata_ram1_data<9>> created at line 282.
+    Found 16-bit register for signal <Mtridata_ram2_data> created at line 129.
+    Found 1-bit register for signal <Mtrien_ram1_data<0>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<10>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<11>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<12>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<13>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<14>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<15>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<1>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<2>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<3>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<4>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<5>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<6>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<7>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<8>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram1_data<9>> created at line 282.
+    Found 1-bit register for signal <Mtrien_ram2_data> created at line 129.
+    Found 16-bit up counter for signal <pro_addr>.
+    Found 16-bit comparator greater for signal <ram1_addr$cmp_gt0000> created at line 323.
+    Found 16-bit comparator less for signal <ram1_addr$cmp_lt0000> created at line 323.
+    Found 16-bit comparator less for signal <ram1_addr$cmp_lt0001> created at line 323.
+    Found 16-bit comparator greatequal for signal <ram1_en$cmp_ge0000> created at line 323.
+    Found 16-bit comparator greatequal for signal <ram1_en$cmp_ge0001> created at line 323.
+    Found 16-bit comparator lessequal for signal <ram1_en$cmp_le0000> created at line 323.
+    Found 16-bit comparator greatequal for signal <ram2_now_s$cmp_ge0000> created at line 156.
+    Found 16-bit comparator lessequal for signal <ram2_now_s$cmp_le0000> created at line 156.
+    Found 16-bit register for signal <t1>.
+    Found 16-bit register for signal <t2>.
+    Found 16-bit comparator greater for signal <t2$cmp_gt0000> created at line 194.
+    Found 16-bit comparator less for signal <t2$cmp_lt0000> created at line 194.
+    Summary:
+	inferred   3 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 180 D-type flip-flop(s).
+	inferred  11 Comparator(s).
+	inferred  32 Tristate(s).
+Unit <MEM> synthesized.
+
+
+Synthesizing Unit <ForwardUnit>.
+    Related source file is "D:/xlinix/MIPS16/ForwardUnit.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <id_ry> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Using one-hot encoding for signal <ForwardS_id_temp>.
+    Using one-hot encoding for signal <ForwardA_id_temp>.
+    Found 3-bit comparator equal for signal <ForwardA_exe$cmp_eq0000> created at line 117.
+    Found 3-bit comparator equal for signal <ForwardA_exe$cmp_eq0001> created at line 124.
+    Found 2-bit comparator equal for signal <ForwardA_exe$cmp_eq0002> created at line 140.
+    Found 2-bit comparator equal for signal <ForwardA_exe$cmp_eq0003> created at line 147.
+    Found 3-bit comparator equal for signal <ForwardA_id_temp$cmp_eq0000> created at line 246.
+    Found 3-bit comparator equal for signal <ForwardA_id_temp$cmp_eq0001> created at line 255.
+    Found 3-bit comparator equal for signal <ForwardMemDataB_exe$cmp_eq0000> created at line 198.
+    Found 3-bit comparator equal for signal <ForwardMemDataB_exe$cmp_eq0001> created at line 178.
+    Found 2-bit comparator equal for signal <ForwardS_id_temp$cmp_eq0000> created at line 294.
+    Found 2-bit comparator equal for signal <ForwardS_id_temp$cmp_eq0001> created at line 303.
+    Summary:
+	inferred  10 Comparator(s).
+Unit <ForwardUnit> synthesized.
+
+
+Synthesizing Unit <BranchControl>.
+    Related source file is "D:/xlinix/MIPS16/BranchControl.vhd".
+WARNING:Xst:653 - Signal <zero16> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:737 - Found 16-bit latch for signal <branch_target_addr_o>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit adder for signal <branch_target_addr_o$share0000> created at line 66.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <BranchControl> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "D:/xlinix/MIPS16/PC.vhd".
+WARNING:Xst:647 - Input <flush> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <if_id_ins_i<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <if_id_ins_i<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <int_signal> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <int_buffer_pc> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State s2 is never reached in FSM <now_s>.
+INFO:Xst:1799 - State s3 is never reached in FSM <now_s>.
+    Found finite state machine <FSM_3> for signal <now_s>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_complete            (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <int_recover_o>.
+    Found 16-bit register for signal <if_pc>.
+    Found 16-bit register for signal <int_pc_o>.
+    Found 16-bit register for signal <int_signal_o>.
+    Found 1-bit register for signal <int_state>.
+    Found 16-bit register for signal <pc>.
+    Found 16-bit adder for signal <pc$share0000> created at line 105.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <IF_ID>.
+    Related source file is "D:/xlinix/MIPS16/IF_ID.vhd".
+WARNING:Xst:647 - Input <flush> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:1799 - State s2 is never reached in FSM <now_s>.
+INFO:Xst:1799 - State s3 is never reached in FSM <now_s>.
+    Found finite state machine <FSM_4> for signal <now_s>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_complete            (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit register for signal <id_pc>.
+    Found 16-bit register for signal <id_inst>.
+    Found 1-bit register for signal <IntModule_o>.
+    Found 16-bit register for signal <inst>.
+    Found 16-bit register for signal <pc>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  65 D-type flip-flop(s).
+Unit <IF_ID> synthesized.
+
+
+Synthesizing Unit <ID>.
+    Related source file is "D:/xlinix/MIPS16/ID.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pc_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <flush> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stall> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4x3-bit ROM for signal <$rom0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <ID> synthesized.
+
+
+Synthesizing Unit <ID_EX>.
+    Related source file is "D:/xlinix/MIPS16/ID_EX.vhd".
+WARNING:Xst:647 - Input <flush> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stall> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:1799 - State s2 is never reached in FSM <now_s>.
+INFO:Xst:1799 - State s3 is never reached in FSM <now_s>.
+    Found finite state machine <FSM_5> for signal <now_s>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_complete            (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <RegData_o>.
+    Found 16-bit register for signal <imm_o>.
+    Found 2-bit register for signal <SpRegWrite_o>.
+    Found 1-bit register for signal <WriteSpReg_o>.
+    Found 16-bit register for signal <A_o>.
+    Found 1-bit register for signal <MemWrite_o>.
+    Found 16-bit register for signal <pc_o>.
+    Found 3-bit register for signal <rx_o>.
+    Found 16-bit register for signal <B_o>.
+    Found 2-bit register for signal <RegDst_o>.
+    Found 3-bit register for signal <ry_o>.
+    Found 2-bit register for signal <ALUSrcA_o>.
+    Found 4-bit register for signal <ALUOp_o>.
+    Found 16-bit register for signal <S_o>.
+    Found 3-bit register for signal <rz_o>.
+    Found 1-bit register for signal <RegWrite_o>.
+    Found 1-bit register for signal <ALUSrcB_o>.
+    Found 1-bit register for signal <MemRead_o>.
+    Found 1-bit register for signal <IntModule_o>.
+    Found 1-bit register for signal <MemData_o>.
+    Found 2-bit register for signal <SpRegRead_o>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 109 D-type flip-flop(s).
+Unit <ID_EX> synthesized.
+
+
+Synthesizing Unit <EX>.
+    Related source file is "D:/xlinix/MIPS16/EX.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit 4-to-1 multiplexer for signal <RegDst_o>.
+    Found 16-bit addsub for signal <ALUOut$addsub0000>.
+    Found 16-bit comparator less for signal <ALUOut$cmp_lt0000> created at line 122.
+    Found 16-bit comparator not equal for signal <ALUOut$cmp_ne0000> created at line 115.
+    Found 16-bit shifter logical left for signal <ALUOut$shift0004> created at line 133.
+    Found 16-bit shifter logical right for signal <ALUOut$shift0005> created at line 140.
+    Found 16-bit shifter arithmetic right for signal <ALUOut$shift0006> created at line 147.
+    Found 16-bit shifter arithmetic right for signal <ALUOut$shift0008> created at line 151.
+    Found 16-bit 4-to-1 multiplexer for signal <input_A>.
+    Found 16-bit 4-to-1 multiplexer for signal <input_A$mux0001> created at line 163.
+    Found 16-bit 4-to-1 multiplexer for signal <input_B>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  51 Multiplexer(s).
+	inferred   4 Combinational logic shifter(s).
+Unit <EX> synthesized.
+
+
+Synthesizing Unit <EX_MEM>.
+    Related source file is "D:/xlinix/MIPS16/EX_MEM.vhd".
+WARNING:Xst:647 - Input <flush> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stall> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:1799 - State s2 is never reached in FSM <now_s>.
+INFO:Xst:1799 - State s3 is never reached in FSM <now_s>.
+    Found finite state machine <FSM_6> for signal <now_s>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_complete            (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <RegData_o>.
+    Found 2-bit register for signal <SpRegWrite_o>.
+    Found 1-bit register for signal <WriteSpReg_o>.
+    Found 1-bit register for signal <MemWrite_o>.
+    Found 16-bit register for signal <ALUOut_o>.
+    Found 3-bit register for signal <RegDst_o>.
+    Found 1-bit register for signal <RegWrite_o>.
+    Found 1-bit register for signal <MemRead_o>.
+    Found 1-bit register for signal <IntModule_o>.
+    Found 16-bit register for signal <MEMData_o>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  43 D-type flip-flop(s).
+Unit <EX_MEM> synthesized.
+
+
+Synthesizing Unit <MEM_WB>.
+    Related source file is "D:/xlinix/MIPS16/MEM_WB.vhd".
+WARNING:Xst:647 - Input <flush> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stall> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:1799 - State s2 is never reached in FSM <now_s>.
+INFO:Xst:1799 - State s3 is never reached in FSM <now_s>.
+    Found finite state machine <FSM_7> for signal <now_s>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flash_complete            (positive)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit register for signal <SpRegWrite_o>.
+    Found 1-bit register for signal <WriteSpReg_o>.
+    Found 16-bit register for signal <ALUOut_o>.
+    Found 3-bit register for signal <RegDst_o>.
+    Found 1-bit register for signal <RegWrite_o>.
+    Found 16-bit register for signal <WB_Data>.
+    Found 1-bit register for signal <IntModule_o>.
+    Found 16-bit register for signal <MEMData_o>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  56 D-type flip-flop(s).
+Unit <MEM_WB> synthesized.
+
+
+Synthesizing Unit <MIPS>.
+    Related source file is "D:/xlinix/MIPS16/MIPS.vhd".
+WARNING:Xst:647 - Input <clk_11m> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <s> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pro_addr<15:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pc_int_pc_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pc_int_module_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mem_wb_reg_data_o> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mem_wb_mem_data_o> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <int_r1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <int_r0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <if_id_int_module_o> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <if_id_int_module_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <if_id_flush_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <id_ForwardData_MEM2_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <id_ForwardData_MEM1_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <id_ForwardData_ALU2_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <id_ForwardData_ALU1_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <exe_ForwardData2_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <exe_ForwardData1_mem_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <exe_ForwardData1_alu_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <MIPS> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x3-bit ROM                                           : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit addsub                                         : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 131
+ 1-bit register                                        : 81
+ 16-bit register                                       : 37
+ 2-bit register                                        : 6
+ 23-bit register                                       : 1
+ 3-bit register                                        : 5
+ 4-bit register                                        : 1
+# Latches                                              : 1
+ 16-bit latch                                          : 1
+# Comparators                                          : 26
+ 16-bit comparator greatequal                          : 3
+ 16-bit comparator greater                             : 3
+ 16-bit comparator less                                : 4
+ 16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 1
+ 2-bit comparator equal                                : 5
+ 3-bit comparator equal                                : 8
+# Multiplexers                                         : 5
+ 16-bit 4-to-1 multiplexer                             : 4
+ 3-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 4
+ 16-bit shifter arithmetic right                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Tristates                                            : 17
+ 1-bit tristate buffer                                 : 16
+ 16-bit tristate buffer                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_7> for best encoding.
+Optimizing FSM <u_mem_wb/now_s/FSM> on signal <now_s[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | unreached
+ s3    | unreached
+-------------------
+Analyzing FSM <FSM_6> for best encoding.
+Optimizing FSM <u_exe_mem/now_s/FSM> on signal <now_s[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | unreached
+ s3    | unreached
+-------------------
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <u_id_exe/now_s/FSM> on signal <now_s[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | unreached
+ s3    | unreached
+-------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <u_if_id/now_s/FSM> on signal <now_s[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | unreached
+ s3    | unreached
+-------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <u_pc/now_s/FSM> on signal <now_s[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | unreached
+ s3    | unreached
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <u_mem/ram1_now_s/FSM> on signal <ram1_now_s[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0001
+ s1    | 0010
+ s2    | 0100
+ s3    | 1000
+ s4    | unreached
+ s5    | unreached
+ s6    | unreached
+ s7    | unreached
+ s8    | unreached
+ s9    | unreached
+ s10   | unreached
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <u_mem/ram2_now_s/FSM> on signal <ram2_now_s[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0001
+ s1    | 0010
+ s2    | 0100
+ s3    | 1000
+ s4    | unreached
+ s5    | unreached
+ s6    | unreached
+ s7    | unreached
+ s8    | unreached
+ s9    | unreached
+ s10   | unreached
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <u_mem/flash_now_s/FSM> on signal <flash_now_s[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00000001
+ s1    | 00000010
+ s2    | 00000100
+ s3    | 00001000
+ s4    | 00010000
+ s5    | 00100000
+ s6    | 01000000
+ s7    | 10000000
+ s8    | unreached
+ s9    | unreached
+ s10   | unreached
+-------------------
+INFO:Xst:2261 - The FF/Latch <flash_complete> in Unit <u_mem> is equivalent to the following FF/Latch, which will be removed : <flash_complete_o> 
+INFO:Xst:2261 - The FF/Latch <flash_addr_0> in Unit <u_mem> is equivalent to the following 6 FFs/Latches, which will be removed : <flash_addr_17> <flash_addr_18> <flash_addr_19> <flash_addr_20> <flash_addr_21> <flash_addr_22> 
+INFO:Xst:2261 - The FF/Latch <int_signal_o_4> in Unit <u_pc> is equivalent to the following 11 FFs/Latches, which will be removed : <int_signal_o_5> <int_signal_o_6> <int_signal_o_7> <int_signal_o_8> <int_signal_o_9> <int_signal_o_10> <int_signal_o_11> <int_signal_o_12> <int_signal_o_13> <int_signal_o_14> <int_signal_o_15> 
+WARNING:Xst:1710 - FF/Latch <flash_addr_0> (without init value) has a constant value of 0 in block <u_mem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <int_signal_o_4> has a constant value of 0 in block <u_pc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pro_addr_o_7> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_8> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_9> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_10> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_11> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_12> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_13> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_14> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2677 - Node <pro_addr_o_15> of sequential type is unconnected in block <u_mem>.
+WARNING:Xst:2404 -  FFs/Latches <flash_addr<22:17>> (without init value) have a constant value of 0 in block <MEM>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 8
+# ROMs                                                 : 1
+ 4x3-bit ROM                                           : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit addsub                                         : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 721
+ Flip-Flops                                            : 721
+# Latches                                              : 1
+ 16-bit latch                                          : 1
+# Comparators                                          : 26
+ 16-bit comparator greatequal                          : 3
+ 16-bit comparator greater                             : 3
+ 16-bit comparator less                                : 4
+ 16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 1
+ 2-bit comparator equal                                : 5
+ 3-bit comparator equal                                : 8
+# Multiplexers                                         : 5
+ 16-bit 4-to-1 multiplexer                             : 4
+ 3-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 4
+ 16-bit shifter arithmetic right                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <flash_addr_0> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <int_signal_o_4> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_5> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_6> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_7> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_8> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_9> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_10> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_11> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_12> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_13> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_14> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <int_signal_o_15> has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <flash_complete> in Unit <MEM> is equivalent to the following FF/Latch, which will be removed : <flash_complete_o> 
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_15> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_14> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_13> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_12> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_11> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_10> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_9> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_8> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem/pro_addr_o_7> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2170 - Unit EX : the following signal(s) form a combinatorial loop: ALUOut_shift0007<15>.
+
+Optimizing unit <MIPS> ...
+
+Optimizing unit <ImmExtend> ...
+
+Optimizing unit <Registers> ...
+
+Optimizing unit <ForwardUnit> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <IF_ID> ...
+
+Optimizing unit <ID> ...
+
+Optimizing unit <ID_EX> ...
+
+Optimizing unit <EX> ...
+
+Optimizing unit <EX_MEM> ...
+
+Optimizing unit <MEM_WB> ...
+
+Optimizing unit <BranchControl> ...
+WARNING:Xst:2677 - Node <u_if_id/IntModule_o> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_15> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_14> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_13> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_12> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_11> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_10> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_9> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_8> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_7> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_6> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_5> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_4> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_3> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_2> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_1> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <u_mem_wb/MEMData_o_0> of sequential type is unconnected in block <MIPS>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <u_id_exe/RegData_o> in Unit <MIPS> is equivalent to the following FF/Latch, which will be removed : <u_id_exe/MemRead_o> 
+INFO:Xst:2261 - The FF/Latch <u_id_exe/imm_o_15> in Unit <MIPS> is equivalent to the following 4 FFs/Latches, which will be removed : <u_id_exe/imm_o_14> <u_id_exe/imm_o_13> <u_id_exe/imm_o_12> <u_id_exe/imm_o_11> 
+INFO:Xst:2261 - The FF/Latch <u_exe_mem/RegData_o> in Unit <MIPS> is equivalent to the following FF/Latch, which will be removed : <u_exe_mem/MemRead_o> 
+Found area constraint ratio of 100 (+ 5) on block MIPS, actual ratio is 12.
+INFO:Xst:2260 - The FF/Latch <u_id_exe/imm_o_2> in Unit <MIPS> is equivalent to the following FF/Latch : <u_id_exe/rz_o_0> 
+INFO:Xst:2260 - The FF/Latch <u_id_exe/imm_o_3> in Unit <MIPS> is equivalent to the following FF/Latch : <u_id_exe/rz_o_1> 
+INFO:Xst:2261 - The FF/Latch <u_id_exe/imm_o_2> in Unit <MIPS> is equivalent to the following FF/Latch, which will be removed : <u_id_exe/rz_o_0> 
+INFO:Xst:2261 - The FF/Latch <u_id_exe/imm_o_3> in Unit <MIPS> is equivalent to the following FF/Latch, which will be removed : <u_id_exe/rz_o_1> 
+FlipFlop u_exe_mem/RegData_o has been replicated 1 time(s)
+FlipFlop u_mem_wb/SpRegWrite_o_0 has been replicated 1 time(s)
+FlipFlop u_mem_wb/SpRegWrite_o_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 713
+ Flip-Flops                                            : 713
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MIPS.ngr
+Top Level Output File Name         : MIPS
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 170
+
+Cell Usage :
+# BELS                             : 2328
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 19
+#      LUT2                        : 85
+#      LUT2_D                      : 5
+#      LUT2_L                      : 4
+#      LUT3                        : 383
+#      LUT3_D                      : 9
+#      LUT3_L                      : 43
+#      LUT4                        : 1241
+#      LUT4_D                      : 59
+#      LUT4_L                      : 74
+#      MUXCY                       : 98
+#      MUXF5                       : 231
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 729
+#      FDCE                        : 575
+#      FDE                         : 113
+#      FDP                         : 1
+#      FDPE                        : 24
+#      LDCP                        : 16
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 169
+#      IBUF                        : 38
+#      IOBUF                       : 32
+#      OBUF                        : 99
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                     1029  out of   8672    11%  
+ Number of Slice Flip Flops:            729  out of  17344     4%  
+ Number of 4 input LUTs:               1933  out of  17344    11%  
+ Number of IOs:                         170
+ Number of bonded IOBs:                 169  out of    250    67%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                           | Load  |
+-----------------------------------+-------------------------------------------------+-------+
+clk1(clk1:O)                       | BUFG(*)(u_mem/flash_now_s_FSM_FFd1)             | 713   |
+id_branch_o(u_id/Branch:O)         | NONE(*)(u_branchcontrol/branch_target_addr_o_15)| 16    |
+-----------------------------------+-------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
+Control Signal                                                                                       | Buffer(FF name)                              | Load  |
+-----------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
+u_exe_mem/now_s_FSM_Acst_FSM_inv(u_registers/rst_inv1_INV_0:O)                                       | NONE(u_exe_mem/ALUOut_o_0)                   | 600   |
+u_branchcontrol/branch_target_addr_o_0__and0000(u_branchcontrol/branch_target_addr_o_0__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_0) | 1     |
+u_branchcontrol/branch_target_addr_o_0__and0001(u_branchcontrol/branch_target_addr_o_0__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_0) | 1     |
+u_branchcontrol/branch_target_addr_o_10__and0000(u_branchcontrol/branch_target_addr_o_10__and00001:O)| NONE(u_branchcontrol/branch_target_addr_o_10)| 1     |
+u_branchcontrol/branch_target_addr_o_10__and0001(u_branchcontrol/branch_target_addr_o_10__and00011:O)| NONE(u_branchcontrol/branch_target_addr_o_10)| 1     |
+u_branchcontrol/branch_target_addr_o_11__and0000(u_branchcontrol/branch_target_addr_o_11__and00001:O)| NONE(u_branchcontrol/branch_target_addr_o_11)| 1     |
+u_branchcontrol/branch_target_addr_o_11__and0001(u_branchcontrol/branch_target_addr_o_11__and00011:O)| NONE(u_branchcontrol/branch_target_addr_o_11)| 1     |
+u_branchcontrol/branch_target_addr_o_12__and0000(u_branchcontrol/branch_target_addr_o_12__and00001:O)| NONE(u_branchcontrol/branch_target_addr_o_12)| 1     |
+u_branchcontrol/branch_target_addr_o_12__and0001(u_branchcontrol/branch_target_addr_o_12__and00011:O)| NONE(u_branchcontrol/branch_target_addr_o_12)| 1     |
+u_branchcontrol/branch_target_addr_o_13__and0000(u_branchcontrol/branch_target_addr_o_13__and00001:O)| NONE(u_branchcontrol/branch_target_addr_o_13)| 1     |
+u_branchcontrol/branch_target_addr_o_13__and0001(u_branchcontrol/branch_target_addr_o_13__and00011:O)| NONE(u_branchcontrol/branch_target_addr_o_13)| 1     |
+u_branchcontrol/branch_target_addr_o_14__and0000(u_branchcontrol/branch_target_addr_o_14__and00001:O)| NONE(u_branchcontrol/branch_target_addr_o_14)| 1     |
+u_branchcontrol/branch_target_addr_o_14__and0001(u_branchcontrol/branch_target_addr_o_14__and00011:O)| NONE(u_branchcontrol/branch_target_addr_o_14)| 1     |
+u_branchcontrol/branch_target_addr_o_15__and0000(u_branchcontrol/branch_target_addr_o_15__and00001:O)| NONE(u_branchcontrol/branch_target_addr_o_15)| 1     |
+u_branchcontrol/branch_target_addr_o_15__and0001(u_branchcontrol/branch_target_addr_o_15__and00011:O)| NONE(u_branchcontrol/branch_target_addr_o_15)| 1     |
+u_branchcontrol/branch_target_addr_o_1__and0000(u_branchcontrol/branch_target_addr_o_1__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_1) | 1     |
+u_branchcontrol/branch_target_addr_o_1__and0001(u_branchcontrol/branch_target_addr_o_1__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_1) | 1     |
+u_branchcontrol/branch_target_addr_o_2__and0000(u_branchcontrol/branch_target_addr_o_2__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_2) | 1     |
+u_branchcontrol/branch_target_addr_o_2__and0001(u_branchcontrol/branch_target_addr_o_2__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_2) | 1     |
+u_branchcontrol/branch_target_addr_o_3__and0000(u_branchcontrol/branch_target_addr_o_3__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_3) | 1     |
+u_branchcontrol/branch_target_addr_o_3__and0001(u_branchcontrol/branch_target_addr_o_3__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_3) | 1     |
+u_branchcontrol/branch_target_addr_o_4__and0000(u_branchcontrol/branch_target_addr_o_4__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_4) | 1     |
+u_branchcontrol/branch_target_addr_o_4__and0001(u_branchcontrol/branch_target_addr_o_4__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_4) | 1     |
+u_branchcontrol/branch_target_addr_o_5__and0000(u_branchcontrol/branch_target_addr_o_5__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_5) | 1     |
+u_branchcontrol/branch_target_addr_o_5__and0001(u_branchcontrol/branch_target_addr_o_5__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_5) | 1     |
+u_branchcontrol/branch_target_addr_o_6__and0000(u_branchcontrol/branch_target_addr_o_6__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_6) | 1     |
+u_branchcontrol/branch_target_addr_o_6__and0001(u_branchcontrol/branch_target_addr_o_6__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_6) | 1     |
+u_branchcontrol/branch_target_addr_o_7__and0000(u_branchcontrol/branch_target_addr_o_7__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_7) | 1     |
+u_branchcontrol/branch_target_addr_o_7__and0001(u_branchcontrol/branch_target_addr_o_7__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_7) | 1     |
+u_branchcontrol/branch_target_addr_o_8__and0000(u_branchcontrol/branch_target_addr_o_8__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_8) | 1     |
+u_branchcontrol/branch_target_addr_o_8__and0001(u_branchcontrol/branch_target_addr_o_8__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_8) | 1     |
+u_branchcontrol/branch_target_addr_o_9__and0000(u_branchcontrol/branch_target_addr_o_9__and00001:O)  | NONE(u_branchcontrol/branch_target_addr_o_9) | 1     |
+u_branchcontrol/branch_target_addr_o_9__and0001(u_branchcontrol/branch_target_addr_o_9__and00011:O)  | NONE(u_branchcontrol/branch_target_addr_o_9) | 1     |
+-----------------------------------------------------------------------------------------------------+----------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 27.083ns (Maximum Frequency: 36.924MHz)
+   Minimum input arrival time before clock: 25.116ns
+   Maximum output required time after clock: 29.473ns
+   Maximum combinational path delay: 27.313ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk1'
+  Clock period: 27.083ns (frequency: 36.924MHz)
+  Total number of paths / destination ports: 207341715 / 1393
+-------------------------------------------------------------------------
+Delay:               27.083ns (Levels of Logic = 36)
+  Source:            u_mem_wb/RegDst_o_1 (FF)
+  Destination:       u_pc/pc_15 (FF)
+  Source Clock:      clk1 rising
+  Destination Clock: clk1 rising
+
+  Data Path: u_mem_wb/RegDst_o_1 to u_pc/pc_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.591   1.018  u_mem_wb/RegDst_o_1 (u_mem_wb/RegDst_o_1)
+     LUT4:I2->O            1   0.704   0.455  u_forwardunit/ForwardA_exe<0>21140 (u_forwardunit/ForwardA_exe<0>21140)
+     LUT4:I2->O            4   0.704   0.591  u_forwardunit/ForwardA_exe<0>21157 (u_forwardunit/N44)
+     LUT4_D:I3->O          4   0.704   0.591  u_forwardunit/ForwardA_exe<0>211541 (u_forwardunit/N41)
+     LUT4:I3->O           15   0.704   1.052  u_forwardunit/ForwardA_exe<0>1_1 (u_forwardunit/ForwardA_exe<0>1)
+     LUT3:I2->O            1   0.704   0.000  u_exe/Mmux_input_A_39 (u_exe/Mmux_input_A_39)
+     MUXF5:I1->O         109   0.321   1.322  u_exe/Mmux_input_A_2_f5_8 (u_exe/input_A<3>)
+     LUT3:I2->O            4   0.704   0.622  u_exe/Sh10_SW0 (N211)
+     LUT3:I2->O            1   0.704   0.000  u_exe/ALUOut<6>101_G (N705)
+     MUXF5:I1->O           1   0.321   0.424  u_exe/ALUOut<6>101 (u_exe/ALUOut<6>101)
+     LUT4:I3->O            5   0.704   0.637  u_exe/ALUOut<6>109 (u_exe/ALUOut<6>109)
+     LUT4:I3->O            1   0.704   0.000  u_exe/ALUOut<6>127_SW2_F (N766)
+     MUXF5:I0->O           1   0.321   0.455  u_exe/ALUOut<6>127_SW2 (N585)
+     LUT4:I2->O            1   0.704   0.424  u_id/S_o<6>160 (u_id/S_o<6>160)
+     LUT4:I3->O            2   0.704   0.482  u_id/S_o<6>191 (id_S_o<6>)
+     LUT4:I2->O            1   0.704   0.499  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW0 (N565)
+     LUT4:I1->O            1   0.704   0.595  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW1 (N594)
+     LUT4_D:I0->O          1   0.704   0.499  u_branchcontrol/branch_target_addr_o_mux0002<0>193 (u_branchcontrol/branch_target_addr_o_mux0002<0>193)
+     LUT4:I1->O           16   0.704   1.038  u_branchcontrol/branch_target_addr_o_mux0002<0>1134_1 (u_branchcontrol/branch_target_addr_o_mux0002<0>1134)
+     LUT4:I3->O            1   0.704   0.000  u_pc/Madd_pc_share0000_lut<0> (u_pc/Madd_pc_share0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u_pc/Madd_pc_share0000_cy<0> (u_pc/Madd_pc_share0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<1> (u_pc/Madd_pc_share0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<2> (u_pc/Madd_pc_share0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<3> (u_pc/Madd_pc_share0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<4> (u_pc/Madd_pc_share0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<5> (u_pc/Madd_pc_share0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<6> (u_pc/Madd_pc_share0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<7> (u_pc/Madd_pc_share0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<8> (u_pc/Madd_pc_share0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<9> (u_pc/Madd_pc_share0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<10> (u_pc/Madd_pc_share0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<11> (u_pc/Madd_pc_share0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<12> (u_pc/Madd_pc_share0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<13> (u_pc/Madd_pc_share0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  u_pc/Madd_pc_share0000_cy<14> (u_pc/Madd_pc_share0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.455  u_pc/Madd_pc_share0000_xor<15> (u_pc/pc_share0000<15>)
+     LUT4:I2->O            1   0.704   0.000  u_pc/pc_mux0002<15>1 (u_pc/pc_mux0002<15>)
+     FDCE:D                    0.308          u_pc/pc_15
+    ----------------------------------------
+    Total                     27.083ns (15.924ns logic, 11.159ns route)
+                                       (58.8% logic, 41.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'id_branch_o'
+  Clock period: 2.721ns (frequency: 367.512MHz)
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               2.721ns (Levels of Logic = 2)
+  Source:            u_branchcontrol/branch_target_addr_o_15 (LATCH)
+  Destination:       u_branchcontrol/branch_target_addr_o_15 (LATCH)
+  Source Clock:      id_branch_o falling
+  Destination Clock: id_branch_o falling
+
+  Data Path: u_branchcontrol/branch_target_addr_o_15 to u_branchcontrol/branch_target_addr_o_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             5   0.676   0.712  u_branchcontrol/branch_target_addr_o_15 (u_branchcontrol/branch_target_addr_o_15)
+     LUT3:I1->O            1   0.704   0.000  u_branchcontrol/branch_target_addr_o_mux0002<15>_F (N1104)
+     MUXF5:I0->O           1   0.321   0.000  u_branchcontrol/branch_target_addr_o_mux0002<15> (u_branchcontrol/branch_target_addr_o_mux0002<15>)
+     LDCP:D                    0.308          u_branchcontrol/branch_target_addr_o_15
+    ----------------------------------------
+    Total                      2.721ns (2.009ns logic, 0.712ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk1'
+  Total number of paths / destination ports: 1922134 / 279
+-------------------------------------------------------------------------
+Offset:              25.116ns (Levels of Logic = 40)
+  Source:            rst (PAD)
+  Destination:       u_pc/pc_15 (FF)
+  Destination Clock: clk1 rising
+
+  Data Path: rst to u_pc/pc_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.218   1.427  rst_IBUF (rst_IBUF)
+     LUT4:I0->O            7   0.704   0.712  u_mem/MEMData_o<0>1 (mem_data_o<0>)
+     LUT4:I3->O            1   0.704   0.000  u_forwardunit/ForwardA_exe<0>1_SW0_G (N719)
+     MUXF5:I1->O           1   0.321   0.455  u_forwardunit/ForwardA_exe<0>1_SW0 (N391)
+     LUT3:I2->O            1   0.704   0.000  u_exe/Mmux_input_A_3 (u_exe/Mmux_input_A_3)
+     MUXF5:I1->O          47   0.321   1.302  u_exe/Mmux_input_A_2_f5 (u_exe/input_A<0>)
+     LUT3:I2->O            1   0.704   0.000  u_exe/Maddsub_ALUOut_addsub0000_lut<0> (u_exe/Maddsub_ALUOut_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<0> (u_exe/Maddsub_ALUOut_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<1> (u_exe/Maddsub_ALUOut_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<2> (u_exe/Maddsub_ALUOut_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<3> (u_exe/Maddsub_ALUOut_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<4> (u_exe/Maddsub_ALUOut_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<5> (u_exe/Maddsub_ALUOut_addsub0000_cy<5>)
+     XORCY:CI->O           1   0.804   0.424  u_exe/Maddsub_ALUOut_addsub0000_xor<6> (u_exe/ALUOut_addsub0000<6>)
+     LUT4:I3->O            5   0.704   0.633  u_exe/ALUOut<6>57 (u_exe/ALUOut<6>57)
+     MUXF5:S->O            1   0.739   0.455  u_exe/ALUOut<6>127_SW2 (N585)
+     LUT4:I2->O            1   0.704   0.424  u_id/S_o<6>160 (u_id/S_o<6>160)
+     LUT4:I3->O            2   0.704   0.482  u_id/S_o<6>191 (id_S_o<6>)
+     LUT4:I2->O            1   0.704   0.499  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW0 (N565)
+     LUT4:I1->O            1   0.704   0.595  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW1 (N594)
+     LUT4_D:I0->O          1   0.704   0.499  u_branchcontrol/branch_target_addr_o_mux0002<0>193 (u_branchcontrol/branch_target_addr_o_mux0002<0>193)
+     LUT4:I1->O           16   0.704   1.038  u_branchcontrol/branch_target_addr_o_mux0002<0>1134_1 (u_branchcontrol/branch_target_addr_o_mux0002<0>1134)
+     LUT4:I3->O            1   0.704   0.000  u_pc/Madd_pc_share0000_lut<0> (u_pc/Madd_pc_share0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u_pc/Madd_pc_share0000_cy<0> (u_pc/Madd_pc_share0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<1> (u_pc/Madd_pc_share0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<2> (u_pc/Madd_pc_share0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<3> (u_pc/Madd_pc_share0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<4> (u_pc/Madd_pc_share0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<5> (u_pc/Madd_pc_share0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<6> (u_pc/Madd_pc_share0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<7> (u_pc/Madd_pc_share0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<8> (u_pc/Madd_pc_share0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<9> (u_pc/Madd_pc_share0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<10> (u_pc/Madd_pc_share0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<11> (u_pc/Madd_pc_share0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<12> (u_pc/Madd_pc_share0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  u_pc/Madd_pc_share0000_cy<13> (u_pc/Madd_pc_share0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  u_pc/Madd_pc_share0000_cy<14> (u_pc/Madd_pc_share0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.455  u_pc/Madd_pc_share0000_xor<15> (u_pc/pc_share0000<15>)
+     LUT4:I2->O            1   0.704   0.000  u_pc/pc_mux0002<15>1 (u_pc/pc_mux0002<15>)
+     FDCE:D                    0.308          u_pc/pc_15
+    ----------------------------------------
+    Total                     25.116ns (15.716ns logic, 9.400ns route)
+                                       (62.6% logic, 37.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'id_branch_o'
+  Total number of paths / destination ports: 154506 / 16
+-------------------------------------------------------------------------
+Offset:              22.103ns (Levels of Logic = 24)
+  Source:            rst (PAD)
+  Destination:       u_branchcontrol/branch_target_addr_o_15 (LATCH)
+  Destination Clock: id_branch_o falling
+
+  Data Path: rst to u_branchcontrol/branch_target_addr_o_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.218   1.427  rst_IBUF (rst_IBUF)
+     LUT4:I0->O            7   0.704   0.712  u_mem/MEMData_o<0>1 (mem_data_o<0>)
+     LUT4:I3->O            1   0.704   0.000  u_forwardunit/ForwardA_exe<0>1_SW0_G (N719)
+     MUXF5:I1->O           1   0.321   0.455  u_forwardunit/ForwardA_exe<0>1_SW0 (N391)
+     LUT3:I2->O            1   0.704   0.000  u_exe/Mmux_input_A_3 (u_exe/Mmux_input_A_3)
+     MUXF5:I1->O          47   0.321   1.302  u_exe/Mmux_input_A_2_f5 (u_exe/input_A<0>)
+     LUT3:I2->O            1   0.704   0.000  u_exe/Maddsub_ALUOut_addsub0000_lut<0> (u_exe/Maddsub_ALUOut_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<0> (u_exe/Maddsub_ALUOut_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<1> (u_exe/Maddsub_ALUOut_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<2> (u_exe/Maddsub_ALUOut_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<3> (u_exe/Maddsub_ALUOut_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<4> (u_exe/Maddsub_ALUOut_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<5> (u_exe/Maddsub_ALUOut_addsub0000_cy<5>)
+     XORCY:CI->O           1   0.804   0.424  u_exe/Maddsub_ALUOut_addsub0000_xor<6> (u_exe/ALUOut_addsub0000<6>)
+     LUT4:I3->O            5   0.704   0.633  u_exe/ALUOut<6>57 (u_exe/ALUOut<6>57)
+     MUXF5:S->O            1   0.739   0.455  u_exe/ALUOut<6>127_SW2 (N585)
+     LUT4:I2->O            1   0.704   0.424  u_id/S_o<6>160 (u_id/S_o<6>160)
+     LUT4:I3->O            2   0.704   0.482  u_id/S_o<6>191 (id_S_o<6>)
+     LUT4:I2->O            1   0.704   0.499  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW0 (N565)
+     LUT4:I1->O            1   0.704   0.595  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW1 (N594)
+     LUT4_D:I0->LO         1   0.704   0.179  u_branchcontrol/branch_target_addr_o_mux0002<0>193 (N1214)
+     LUT4:I1->O           20   0.704   1.277  u_branchcontrol/branch_target_addr_o_mux0002<0>1134 (u_branchcontrol/N01)
+     LUT3:I0->O            1   0.704   0.000  u_branchcontrol/branch_target_addr_o_mux0002<9>_F (N1086)
+     MUXF5:I0->O           1   0.321   0.000  u_branchcontrol/branch_target_addr_o_mux0002<9> (u_branchcontrol/branch_target_addr_o_mux0002<9>)
+     LDCP:D                    0.308          u_branchcontrol/branch_target_addr_o_9
+    ----------------------------------------
+    Total                     22.103ns (13.239ns logic, 8.864ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1'
+  Total number of paths / destination ports: 1398196 / 118
+-------------------------------------------------------------------------
+Offset:              29.473ns (Levels of Logic = 20)
+  Source:            u_mem_wb/RegDst_o_1 (FF)
+  Destination:       led<15> (PAD)
+  Source Clock:      clk1 rising
+
+  Data Path: u_mem_wb/RegDst_o_1 to led<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.591   1.018  u_mem_wb/RegDst_o_1 (u_mem_wb/RegDst_o_1)
+     LUT4:I2->O            1   0.704   0.455  u_forwardunit/ForwardA_exe<0>21140 (u_forwardunit/ForwardA_exe<0>21140)
+     LUT4:I2->O            4   0.704   0.591  u_forwardunit/ForwardA_exe<0>21157 (u_forwardunit/N44)
+     LUT4_D:I3->O          4   0.704   0.591  u_forwardunit/ForwardA_exe<0>211541 (u_forwardunit/N41)
+     LUT4:I3->O           16   0.704   1.034  u_forwardunit/ForwardA_exe<1>1 (exe_ForwardA_i<1>)
+     MUXF5:S->O           52   0.739   1.273  u_exe/Mmux_input_A_2_f5_9 (u_exe/input_A<4>)
+     LUT4_D:I3->O          2   0.704   0.482  u_exe/ALUOut_or000314 (u_exe/ALUOut_or000314)
+     LUT3_D:I2->LO         1   0.704   0.275  u_exe/ALUOut_or000323 (N1197)
+     LUT3_D:I0->O          7   0.704   0.712  u_exe/ALUOut_shift0007<15>1 (u_exe/ALUOut_shift0007<15>)
+     LUT4_D:I3->O         17   0.704   1.055  u_exe/ALUOut<10>11_1 (u_exe/ALUOut<10>11)
+     LUT4:I3->O            5   0.704   0.637  u_exe/ALUOut<13>177 (exe_alu_out_o<13>)
+     LUT4:I3->O            2   0.704   0.482  u_id/A_o<13>160 (u_id/A_o<13>160)
+     LUT4:I2->O            4   0.704   0.666  u_id/A_o<13>191 (id_A_o<13>)
+     LUT4:I1->O            1   0.704   0.424  u_branchcontrol/branch_flag_o_cmp_eq000258 (u_branchcontrol/branch_flag_o_cmp_eq000258)
+     LUT4:I3->O            1   0.704   0.000  u_branchcontrol/branch_flag_o_cmp_eq000280_SW0_F (N794)
+     MUXF5:I0->O           2   0.321   0.451  u_branchcontrol/branch_flag_o_cmp_eq000280_SW0 (N669)
+     LUT4:I3->O           20   0.704   1.137  u_branchcontrol/branch_target_addr_o_mux0002<0>1134 (u_branchcontrol/N01)
+     LUT4:I2->O            1   0.704   0.424  led<15>159_SW0_SW0 (N952)
+     LUT4:I3->O            1   0.704   0.455  led<15>159_SW0 (N804)
+     LUT4:I2->O            1   0.704   0.420  led<15>159 (led_15_OBUF)
+     OBUF:I->O                 3.272          led_15_OBUF (led<15>)
+    ----------------------------------------
+    Total                     29.473ns (16.891ns logic, 12.582ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'id_branch_o'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              10.625ns (Levels of Logic = 6)
+  Source:            u_branchcontrol/branch_target_addr_o_12 (LATCH)
+  Destination:       led<12> (PAD)
+  Source Clock:      id_branch_o falling
+
+  Data Path: u_branchcontrol/branch_target_addr_o_12 to led<12>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             5   0.676   0.808  u_branchcontrol/branch_target_addr_o_12 (u_branchcontrol/branch_target_addr_o_12)
+     LUT4:I0->O            1   0.704   0.424  led<12>18_SW0 (N848)
+     LUT4:I3->O            1   0.704   0.595  led<12>18 (led<12>18)
+     LUT4:I0->O            1   0.704   0.455  led<12>61 (led<12>61)
+     LUT3:I2->O            1   0.704   0.455  led<12>155_SW0 (N850)
+     LUT4:I2->O            1   0.704   0.420  led<12>155 (led_12_OBUF)
+     OBUF:I->O                 3.272          led_12_OBUF (led<12>)
+    ----------------------------------------
+    Total                     10.625ns (7.468ns logic, 3.157ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16544 / 16
+-------------------------------------------------------------------------
+Delay:               27.313ns (Levels of Logic = 26)
+  Source:            rst (PAD)
+  Destination:       led<15> (PAD)
+
+  Data Path: rst to led<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.218   1.427  rst_IBUF (rst_IBUF)
+     LUT4:I0->O            7   0.704   0.712  u_mem/MEMData_o<0>1 (mem_data_o<0>)
+     LUT4:I3->O            1   0.704   0.000  u_forwardunit/ForwardA_exe<0>1_SW0_G (N719)
+     MUXF5:I1->O           1   0.321   0.455  u_forwardunit/ForwardA_exe<0>1_SW0 (N391)
+     LUT3:I2->O            1   0.704   0.000  u_exe/Mmux_input_A_3 (u_exe/Mmux_input_A_3)
+     MUXF5:I1->O          47   0.321   1.302  u_exe/Mmux_input_A_2_f5 (u_exe/input_A<0>)
+     LUT3:I2->O            1   0.704   0.000  u_exe/Maddsub_ALUOut_addsub0000_lut<0> (u_exe/Maddsub_ALUOut_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<0> (u_exe/Maddsub_ALUOut_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<1> (u_exe/Maddsub_ALUOut_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<2> (u_exe/Maddsub_ALUOut_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<3> (u_exe/Maddsub_ALUOut_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<4> (u_exe/Maddsub_ALUOut_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u_exe/Maddsub_ALUOut_addsub0000_cy<5> (u_exe/Maddsub_ALUOut_addsub0000_cy<5>)
+     XORCY:CI->O           1   0.804   0.424  u_exe/Maddsub_ALUOut_addsub0000_xor<6> (u_exe/ALUOut_addsub0000<6>)
+     LUT4:I3->O            5   0.704   0.633  u_exe/ALUOut<6>57 (u_exe/ALUOut<6>57)
+     MUXF5:S->O            1   0.739   0.455  u_exe/ALUOut<6>127_SW2 (N585)
+     LUT4:I2->O            1   0.704   0.424  u_id/S_o<6>160 (u_id/S_o<6>160)
+     LUT4:I3->O            2   0.704   0.482  u_id/S_o<6>191 (id_S_o<6>)
+     LUT4:I2->O            1   0.704   0.499  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW0 (N565)
+     LUT4:I1->O            1   0.704   0.595  u_branchcontrol/branch_target_addr_o_mux0002<0>120_SW0_SW1 (N594)
+     LUT4_D:I0->LO         1   0.704   0.179  u_branchcontrol/branch_target_addr_o_mux0002<0>193 (N1214)
+     LUT4:I1->O           20   0.704   1.137  u_branchcontrol/branch_target_addr_o_mux0002<0>1134 (u_branchcontrol/N01)
+     LUT4:I2->O            1   0.704   0.424  led<15>159_SW0_SW0 (N952)
+     LUT4:I3->O            1   0.704   0.455  led<15>159_SW0 (N804)
+     LUT4:I2->O            1   0.704   0.420  led<15>159 (led_15_OBUF)
+     OBUF:I->O                 3.272          led_15_OBUF (led<15>)
+    ----------------------------------------
+    Total                     27.313ns (17.290ns logic, 10.023ns route)
+                                       (63.3% logic, 36.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.40 secs
+ 
+--> 
+
+Total memory usage is 373464 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  198 (   0 filtered)
+Number of infos    :   74 (   0 filtered)
+

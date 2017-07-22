@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_r0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_r1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">83</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_signal</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">84</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_pc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">if_ins_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">94</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">if_pc_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">103</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ins_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_pc_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">107</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_A_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">108</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_B_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">109</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_S_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_ALU1_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_MEM1_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">112</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_ALU2_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_MEM2_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">149</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_A_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">150</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_B_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">151</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_S_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">152</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_imm_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">180</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_pc_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">181</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_A_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_B_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">183</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_S_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">187</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_imm_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">201</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_alu_out_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">203</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">210</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_mem_mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">212</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_mem_alu_output_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">224</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">239</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_wb_alu_output_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">240</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_wb_mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">241</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_wb_wb_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">885</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r0_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">886</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r1_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">887</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r2_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">888</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r3_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">889</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r4_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">890</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r5_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">891</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r6_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">892</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r7_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">893</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">T_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">894</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">IH_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">895</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">SP_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_r0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_r1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">83</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_signal</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">84</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">int_pc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">if_ins_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">94</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">if_pc_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">103</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ins_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_pc_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">107</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_A_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">108</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_B_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">109</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_S_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">110</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_ALU1_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_MEM1_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">112</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_ALU2_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">113</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_ForwardData_MEM2_i</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">149</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_A_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">150</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_B_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">151</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_S_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">152</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_imm_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">180</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_pc_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">181</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_A_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_B_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">183</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_S_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">187</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">id_exe_imm_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">201</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_alu_out_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">203</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">210</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_mem_mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">212</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">exe_mem_alu_output_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">224</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">239</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_wb_alu_output_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">240</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_wb_mem_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">241</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">mem_wb_wb_data_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">885</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r0_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">886</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r1_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">887</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r2_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">888</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r3_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">889</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r4_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">890</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r5_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">891</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r6_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">892</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">r7_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">893</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">T_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">894</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">IH_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2094" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">895</arg>: Default value is ignored for signal &lt;<arg fmt="%s" index="3">SP_o</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">903</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;clk_h&gt;, &lt;clk_50m&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MIPS.vhd</arg>&quot; line <arg fmt="%d" index="2">915</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;r0_o&gt;, &lt;r1_o&gt;, &lt;r2_o&gt;, &lt;r3_o&gt;, &lt;r4_o&gt;, &lt;r5_o&gt;, &lt;r6_o&gt;, &lt;r7_o&gt;, &lt;T_o&gt;, &lt;IH_o&gt;, &lt;SP_o&gt;, &lt;mem_wb_wb_data_o&gt;, &lt;id_ins_o&gt;, &lt;if_ins_o&gt;, &lt;id_pc_o&gt;, &lt;if_pc_o&gt;, &lt;exe_mem_alu_output_o&gt;, &lt;mem_wb_alu_output_o&gt;, &lt;id_exe_pc_o&gt;, &lt;pc_branch_target_addr_i&gt;, &lt;pc_branch_flag_i&gt;, &lt;id_branch_o&gt;, &lt;id_btype_o&gt;, &lt;id_A_o&gt;, &lt;flash_complete&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ImmExtend.vhd</arg>&quot; line <arg fmt="%d" index="2">109</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ImmExtend.vhd</arg>&quot; line <arg fmt="%d" index="2">119</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ImmExtend.vhd</arg>&quot; line <arg fmt="%d" index="2">129</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ImmExtend.vhd</arg>&quot; line <arg fmt="%d" index="2">139</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ImmExtend.vhd</arg>&quot; line <arg fmt="%d" index="2">139</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/Registers.vhd</arg>&quot; line <arg fmt="%d" index="2">198</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;SpRegWrite_i&gt;, &lt;WriteReg&gt;, &lt;WriteData&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/Registers.vhd</arg>&quot; line <arg fmt="%d" index="2">236</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/Registers.vhd</arg>&quot; line <arg fmt="%d" index="2">217</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;RegWrite&gt;, &lt;WriteReg&gt;, &lt;WriteData&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/Registers.vhd</arg>&quot; line <arg fmt="%d" index="2">267</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/Registers.vhd</arg>&quot; line <arg fmt="%d" index="2">248</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;RegWrite&gt;, &lt;WriteReg&gt;, &lt;WriteData&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MEM.vhd</arg>&quot; line <arg fmt="%d" index="2">108</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;MEMAddr_i&gt;, &lt;MemRead_i&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">ram2_en</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_CE</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_WE</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_byte</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_vpen</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_RP</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; has a constant value of <arg fmt="%s" index="3">ZZZZZZZZZZZZZZZZ</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">124</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">147</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;exe_mem_RegData&gt;, &lt;mem_wb_WriteSpReg&gt;, &lt;mem_wb_SpRegWrite&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">178</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;exe_mem_RegData&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">205</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">196</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;exe_mem_RegData&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">228</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">219</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;exe_mem_RegData&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">255</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">242</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;id_jump&gt;, &lt;id_branch&gt;, &lt;exe_RegWrite&gt;, &lt;exe_RegDst&gt;, &lt;id_rx&gt;, &lt;exe_RegData&gt;, &lt;exe_mem_RegWrite&gt;, &lt;exe_mem_RegDst&gt;, &lt;exe_mem_RegData&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">303</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">319</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/ForwardUnit.vhd</arg>&quot; line <arg fmt="%d" index="2">290</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;id_jump&gt;, &lt;id_branch&gt;, &lt;exe_WriteSpReg&gt;, &lt;exe_SpRegWrite&gt;, &lt;id_sp&gt;, &lt;exe_RegData&gt;, &lt;exe_mem_WriteSpReg&gt;, &lt;exe_mem_SpRegWrite&gt;, &lt;exe_mem_RegData&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/BranchControl.vhd</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/BranchControl.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;zero16&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">171</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">183</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">158</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;A_i&gt;, &lt;S_i&gt;, &lt;imm_i&gt;, &lt;pc_i&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">200</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">212</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">191</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;B_i&gt;, &lt;imm_i&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">219</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;rx_i&gt;, &lt;ry_i&gt;, &lt;rz_i&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">252</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/EX.vhd</arg>&quot; line <arg fmt="%d" index="2">234</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;A_i&gt;, &lt;B_i&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MEM_WB.vhd</arg>&quot; line <arg fmt="%d" index="2">118</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/xlinix/MIPS16/MEM_WB.vhd</arg>&quot; line <arg fmt="%d" index="2">87</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;rst&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">RegData_o</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM_WB</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2561" delta="old" >Always blocking tristate driving signal &lt;<arg fmt="%s" index="1">flash_data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; is removed.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">now_s</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s8</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">flash_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s9</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">flash_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s10</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">flash_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s5</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram2_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s6</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram2_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s7</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram2_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s8</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram2_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s9</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram2_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s10</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram2_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram2_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram1_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s5</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram1_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s6</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram1_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s7</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram1_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s8</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram1_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s9</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram1_now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s10</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">ram1_now_s</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">id_ry</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">zero16</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">branch_target_addr_o</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flush</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">if_id_ins_i&lt;15:11&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">if_id_ins_i&lt;7:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">int_signal</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">int_buffer_pc</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flush</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">pc_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flush</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">stall</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flush</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">stall</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flush</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">stall</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flush</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">stall</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">s3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">now_s</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk_11m</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">s</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">pro_addr&lt;15:7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">pc_int_pc_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">pc_int_module_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">mem_wb_reg_data_o</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">mem_wb_mem_data_o</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">int_r1</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">int_r0</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">if_id_int_module_o</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">if_id_int_module_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">if_id_flush_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">id_ForwardData_MEM2_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">id_ForwardData_MEM1_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">id_ForwardData_ALU2_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">id_ForwardData_ALU1_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">exe_ForwardData2_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">exe_ForwardData1_mem_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">exe_ForwardData1_alu_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flash_complete</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_mem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flash_complete_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_mem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flash_addr_17&gt; &lt;flash_addr_18&gt; &lt;flash_addr_19&gt; &lt;flash_addr_20&gt; &lt;flash_addr_21&gt; &lt;flash_addr_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_pc</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">11 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;int_signal_o_5&gt; &lt;int_signal_o_6&gt; &lt;int_signal_o_7&gt; &lt;int_signal_o_8&gt; &lt;int_signal_o_9&gt; &lt;int_signal_o_10&gt; &lt;int_signal_o_11&gt; &lt;int_signal_o_12&gt; &lt;int_signal_o_13&gt; &lt;int_signal_o_14&gt; &lt;int_signal_o_15&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u_mem</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u_pc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pro_addr_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_mem</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">flash_addr</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">MEM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">int_signal_o_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PC</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flash_complete</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MEM</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flash_complete_o&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem/pro_addr_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">EX</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_if_id/IntModule_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_mem_wb/MEMData_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MIPS</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u_id_exe/RegData_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPS</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u_id_exe/MemRead_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u_id_exe/imm_o_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPS</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u_id_exe/imm_o_14&gt; &lt;u_id_exe/imm_o_13&gt; &lt;u_id_exe/imm_o_12&gt; &lt;u_id_exe/imm_o_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u_exe_mem/RegData_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPS</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u_exe_mem/MemRead_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u_id_exe/imm_o_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPS</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;u_id_exe/rz_o_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u_id_exe/imm_o_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPS</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;u_id_exe/rz_o_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u_id_exe/imm_o_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPS</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u_id_exe/rz_o_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u_id_exe/imm_o_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MIPS</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u_id_exe/rz_o_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

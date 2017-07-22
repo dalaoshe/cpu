@@ -1,0 +1,224 @@
+ISim log file
+Running: D:\xlinix\MIPS16\test_id_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/xlinix/MIPS16/test_id_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 186
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 187
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 202
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 203
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 204
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 810
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 811
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 812
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 814
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 815
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 816
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 818
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 819
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 820
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 822
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 823
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 826
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 827
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 828
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 830
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 831
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 832
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 834
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 835
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 836
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 839
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 840
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 848
+# step
+Stopped at time : 1 s : File "D:/xlinix/MIPS16/test_id.vhd" Line 184
+# step
+Stopped at time : 1 s : File "D:/xlinix/MIPS16/test_id.vhd" Line 185
+# step
+Stopped at time : 1 s : File "D:/xlinix/MIPS16/ID.vhd" Line 202
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 186
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 187
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 202
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 203
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 204
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 810
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 811
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 812
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 814
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 815
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 816
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 818
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 819
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 820
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 822
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 823
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 826
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 827
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 828
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 830
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 831
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 832
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 834
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 835
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 836
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 839
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 840
+# step
+Stopped at time : 1500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 848
+# step
+Stopped at time : 2 s : File "D:/xlinix/MIPS16/test_id.vhd" Line 184
+# step
+Stopped at time : 2 s : File "D:/xlinix/MIPS16/test_id.vhd" Line 185
+# step
+Stopped at time : 2 s : File "D:/xlinix/MIPS16/ID.vhd" Line 202
+# step
+Stopped at time : 2500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 186
+# step
+Stopped at time : 2500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 187
+# restart
+# step
+Simulator is doing circuit initialization process.
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/test_id.vhd" Line 184
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/test_id.vhd" Line 185
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/test_id.vhd" Line 195
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/ID.vhd" Line 143
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/ID.vhd" Line 146
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/ID.vhd" Line 169
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/ID.vhd" Line 172
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/ID.vhd" Line 196
+# step
+Stopped at time : 0 fs : File "D:/xlinix/MIPS16/ID.vhd" Line 202
+# step
+Finished circuit initialization process.
+Stopped at time : 100 ns : File "D:/xlinix/MIPS16/test_id.vhd" Line 197
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 186
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/test_id.vhd" Line 187
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 202
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 203
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 204
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 810
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 811
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 812
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 814
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 815
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 816
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 818
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 819
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 820
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 822
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 823
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 826
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 827
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 828
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 830
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 831
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 832
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 834
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 835
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 836
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 839
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 840
+# step
+Stopped at time : 500 ms : File "D:/xlinix/MIPS16/ID.vhd" Line 848
+# step
+Stopped at time : 1 s : File "D:/xlinix/MIPS16/test_id.vhd" Line 184
+# step
+Stopped at time : 1 s : File "D:/xlinix/MIPS16/test_id.vhd" Line 185

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work MEM_WB.vhd -prj MIPS16 -o MEM_WB.spl -module MEM_WB -template D:/xlinix/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MEM_WB.spl D:/xlinix/MIPS16/MEM_WB.sym 

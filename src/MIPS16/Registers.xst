@@ -1,0 +1,5 @@
+set -tmpdir "D:/xlinix/MIPS16/xst/projnav.tmp"
+set -xsthdpdir "D:/xlinix/MIPS16/xst"
+elaborate
+-ifn Registers.prj
+-ifmt mixed

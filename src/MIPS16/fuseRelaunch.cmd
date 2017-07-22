@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/xlinix/MIPS16/test_id_isim_beh.exe" -prj "D:/xlinix/MIPS16/test_id_beh.prj" "test_id" 
